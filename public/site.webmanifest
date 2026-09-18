@@ -1,0 +1,16 @@
+{
+  "name": "Nordisk Bergmark AB",
+  "short_name": "Nordisk Bergmark",
+  "description": "Professionell bergsprängning, stenspräckning och markarbeten på Orust och i hela Bohuslän.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#eab308",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
