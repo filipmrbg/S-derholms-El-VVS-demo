@@ -174,40 +174,22 @@ export default function Home() {
             paddingBottom: '10px',
           }}>
             {/* ── HERO LOGO: The dominant visual centrepiece ── */}
-            <ScrollReveal animation="fade-down" delay={0} duration={0.9}>
-              <div style={{
-                marginBottom: '18px',
-                display: 'flex',
-                justifyContent: 'center',
-                position: 'relative',
-              }}>
-                {/* Deep contrast radial backing & warm halo to make gold pop cleanly over daytime video */}
-                <div style={{
-                  position: 'absolute',
-                  top: '50%',
-                  left: '50%',
-                  transform: 'translate(-50%, -50%)',
-                  width: 'clamp(260px, 34vw, 380px)',
-                  height: 'clamp(260px, 34vw, 380px)',
-                  background: 'radial-gradient(circle, rgba(10, 15, 26, 0.78) 0%, rgba(10, 15, 26, 0.50) 48%, rgba(245, 158, 11, 0.12) 64%, transparent 78%)',
-                  borderRadius: '50%',
-                  pointerEvents: 'none',
-                  filter: 'blur(16px)',
-                }} />
+            <div className="hero-logo-container">
+              {/* Deep contrast radial backing & warm halo to make gold pop cleanly over daytime video */}
+              <div className="hero-logo-glow" />
+              <picture style={{ display: 'block', position: 'relative', zIndex: 1 }}>
+                <source srcSet="/logo.webp" type="image/webp" />
                 <img
                   src={images.logo.url}
                   alt={images.logo.alt}
-                  style={{
-                    width: 'clamp(200px, 24vw, 290px)',
-                    height: 'auto',
-                    display: 'block',
-                    filter: 'brightness(1.18) contrast(1.14) saturate(1.24) drop-shadow(0 0 2px rgba(0, 0, 0, 0.98)) drop-shadow(0 8px 24px rgba(0, 0, 0, 0.85)) drop-shadow(0 0 26px rgba(245, 178, 48, 0.38))',
-                    position: 'relative',
-                    zIndex: 1,
-                  }}
+                  width={290}
+                  height={317}
+                  loading="eager"
+                  decoding="async"
+                  className="hero-center-logo"
                 />
-              </div>
-            </ScrollReveal>
+              </picture>
+            </div>
 
             {/* ── Thin silver accent divider ── */}
             <ScrollReveal animation="fade-up" delay={120} duration={0.6}>
@@ -727,6 +709,80 @@ export default function Home() {
 
       {/* ── STYLES ───────────────────────────────── */}
       <style>{`
+        @keyframes heroLogoEntrance {
+          0% {
+            opacity: 0;
+            transform: scale(0.84) translateY(-14px);
+            filter: blur(8px) brightness(1.3);
+          }
+          60% {
+            opacity: 1;
+            transform: scale(1.025) translateY(-1px);
+            filter: blur(0px) brightness(1.22);
+          }
+          100% {
+            opacity: 1;
+            transform: scale(1) translateY(0);
+            filter: brightness(1.18) contrast(1.14) saturate(1.24)
+                    drop-shadow(0 0 2px rgba(0, 0, 0, 0.98))
+                    drop-shadow(0 8px 24px rgba(0, 0, 0, 0.85))
+                    drop-shadow(0 0 26px rgba(245, 178, 48, 0.38));
+          }
+        }
+
+        @keyframes heroGlowBloom {
+          0% {
+            opacity: 0;
+            transform: translate(-50%, -50%) scale(0.6);
+          }
+          100% {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+          }
+        }
+
+        .hero-logo-container {
+          margin-bottom: 18px;
+          display: flex;
+          justify-content: center;
+          position: relative;
+        }
+
+        .hero-logo-glow {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: clamp(260px, 34vw, 380px);
+          height: clamp(260px, 34vw, 380px);
+          background: radial-gradient(circle, rgba(10, 15, 26, 0.82) 0%, rgba(10, 15, 26, 0.52) 48%, rgba(245, 158, 11, 0.16) 64%, transparent 78%);
+          border-radius: 50%;
+          pointer-events: none;
+          filter: blur(16px);
+          animation: heroGlowBloom 0.55s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+          will-change: transform, opacity;
+        }
+
+        .hero-center-logo {
+          width: clamp(200px, 24vw, 290px);
+          height: auto;
+          display: block;
+          position: relative;
+          z-index: 1;
+          animation: heroLogoEntrance 0.55s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+          transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), filter 0.3s ease;
+          transform-origin: center center;
+          will-change: transform, opacity, filter;
+        }
+
+        .hero-center-logo:hover {
+          transform: scale(1.035) translateY(-2px);
+          filter: brightness(1.24) contrast(1.18) saturate(1.3)
+                  drop-shadow(0 0 3px rgba(0, 0, 0, 1))
+                  drop-shadow(0 12px 32px rgba(0, 0, 0, 0.9))
+                  drop-shadow(0 0 34px rgba(245, 178, 48, 0.55)) !important;
+        }
+
         .steps-grid-wrapper {
           display: flex;
           align-items: flex-start;
