@@ -66,6 +66,10 @@ const images: SiteImages = {
   },
 
   services: {
+    hero: {
+      url: '/gallery/gallery-2.jpg',
+      alt: 'Söderholms El & VVS installation och service av värmepumpar',
+    },
     'elinstallation': {
       url: '/gallery/gallery-1.jpg',
       alt: 'Auktoriserade elinstallationer och elservice i Stockholm',

@@ -5,6 +5,7 @@ import ScrollReveal from '../components/ScrollReveal';
 import CTABanner from '../components/CTABanner';
 import { usePageTitle } from '../hooks/usePageTitle';
 import services, { ServiceItem } from '../data/services';
+import images from '../data/images';
 
 const container: React.CSSProperties = {
   maxWidth: 'var(--container-max)',
@@ -64,14 +65,14 @@ export default function ServicesOverview() {
       {/* ── HERO HEADER ──────────── */}
       <section style={{
         position: 'relative',
-        backgroundImage: 'url("/services-hero.jpg")',
+        backgroundImage: `url("${images.services.hero?.url || '/gallery/gallery-2.jpg'}")`,
         backgroundSize: 'cover',
-        backgroundPosition: 'center 45%',
+        backgroundPosition: 'center 38%',
         paddingTop: '140px',
-        paddingBottom: '46px',
+        paddingBottom: '50px',
         textAlign: 'center',
       }}>
-        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(15, 23, 42, 0.72) 0%, rgba(15, 23, 42, 0.50) 50%, rgba(15, 23, 42, 0.78) 100%)' }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(15, 23, 42, 0.78) 0%, rgba(15, 23, 42, 0.55) 50%, rgba(15, 23, 42, 0.82) 100%)' }} />
 
         <div style={{ ...container, position: 'relative', zIndex: 1 }}>
           <ScrollReveal animation="blur-in">

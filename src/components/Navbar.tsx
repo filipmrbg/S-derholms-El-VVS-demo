@@ -135,10 +135,10 @@ export default function Navbar() {
           left: 0,
           right: 0,
           zIndex: 1000,
-          minHeight: scrolled ? '78px' : '72px',
+          minHeight: scrolled ? '96px' : '90px',
           padding: scrolled
-            ? '8px clamp(16px, 3.5vw, 36px)'
-            : '14px clamp(16px, 3.5vw, 36px)',
+            ? '4px clamp(16px, 3.5vw, 36px)'
+            : '8px clamp(16px, 3.5vw, 36px)',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
@@ -581,8 +581,8 @@ export default function Navbar() {
           height: 15px;
         }
         .nav-logo {
-          height: 48px;
-          max-height: 48px;
+          height: 86px;
+          max-height: 86px;
           width: auto;
           display: block;
           object-fit: contain;
@@ -590,12 +590,12 @@ export default function Navbar() {
           padding: 0;
           border-radius: 0;
           box-shadow: none;
-          filter: brightness(1.12) saturate(1.2) drop-shadow(0 2px 10px rgba(0, 0, 0, 0.7));
+          filter: brightness(1.15) saturate(1.22) drop-shadow(0 2px 10px rgba(0, 0, 0, 0.7));
           transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
         }
         .nav-logo.scrolled {
-          height: 64px;
-          max-height: 64px;
+          height: 92px;
+          max-height: 92px;
           background-color: transparent;
           padding: 0;
           border-radius: 0;
@@ -616,16 +616,16 @@ export default function Navbar() {
             white-space: nowrap !important;
             gap: 5px !important;
           }
-          nav.navbar-el { padding: 10px 16px !important; min-height: 56px !important; }
-          nav.navbar-el.scrolled { padding: 7px 16px !important; min-height: 62px !important; }
+          nav.navbar-el { padding: 6px 16px !important; min-height: 68px !important; }
+          nav.navbar-el.scrolled { padding: 5px 16px !important; min-height: 74px !important; }
           .nav-logo {
-            height: 38px;
-            max-height: 38px;
+            height: 56px;
+            max-height: 56px;
             padding: 0;
           }
           .nav-logo.scrolled {
-            height: 48px;
-            max-height: 48px;
+            height: 62px;
+            max-height: 62px;
             padding: 0;
           }
         }
