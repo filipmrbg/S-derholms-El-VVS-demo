@@ -4,8 +4,8 @@ import images from '../data/images';
 import services from '../data/services';
 
 const socialIcons = [
-  { Icon: Instagram, label: 'Instagram', href: 'https://www.instagram.com/nordiskbergmark/' },
-  { Icon: Facebook, label: 'Facebook', href: 'https://www.facebook.com/p/Nordisk-Berg-Mark-AB-61580709239263/' },
+  { Icon: Instagram, label: 'Instagram', href: 'https://www.instagram.com/soderholms.se/' },
+  { Icon: Facebook, label: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61581814602808&ref=PROFILE_EDIT_xav_ig_profile_page_web#' },
 ];
 
 export default function Footer() {
@@ -51,7 +51,7 @@ export default function Footer() {
               </Link>
             </div>
             <p style={{ color: 'var(--color-gray-600)', fontSize: '0.9rem', lineHeight: 1.7, margin: '0 0 20px 0' }}>
-              Nordisk Bergmark AB är specialister på bergsprängning, stenspräckning, bergborrning, schaktning och dränering. Vi utgår från Orust och utför kvalitetsarbeten över hela Bohuslän.
+              Söderholms El & VVS erbjuder auktoriserade elinstallationer, professionell VVS och certifierad installation samt service av Thermia värmepumpar. Etablerat 1942 och verksamma i Stockholm med omnejd.
             </p>
             <div style={{ display: 'flex', gap: '12px' }}>
               {socialIcons.map(({ Icon, label, href }) => (
@@ -124,23 +124,23 @@ export default function Footer() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '0.95rem' }}>
 
               <a
-                href="mailto:Nordiskbergmark@gmail.com"
+                href="mailto:info@soderholms.se"
                 className="footer-contact-item"
               >
                 <div className="footer-contact-icon">
                   <Mail size={16} strokeWidth={2} />
                 </div>
-                <span>Nordiskbergmark@gmail.com</span>
+                <span>info@soderholms.se</span>
               </a>
 
               <a
-                href="tel:0722107582"
+                href="tel:08253033"
                 className="footer-contact-item"
               >
                 <div className="footer-contact-icon">
                   <Phone size={16} strokeWidth={2} />
                 </div>
-                <span>072-210 75 82</span>
+                <span>08-25 30 33</span>
               </a>
 
               <div
@@ -149,7 +149,7 @@ export default function Footer() {
                 <div className="footer-contact-icon">
                   <MapPin size={16} strokeWidth={2} />
                 </div>
-                <span>Orust • Uddevalla • Bohuslän</span>
+                <span>Stockholm med omnejd</span>
               </div>
             </div>
           </div>
@@ -171,8 +171,8 @@ export default function Footer() {
           }}
         >
           <div style={{ display: 'flex', gap: '16px', alignItems: 'center', color: 'var(--color-gray-600)', fontSize: '0.875rem', flexWrap: 'wrap' }}>
-            <span>© 2026 - Nordisk Bergmark AB</span>
-            <span>Org.nr: 559547-7760</span>
+            <span>© 2026 - Söderholms El & VVS AB</span>
+            <span>Org.nr: 556041-3055</span>
             <span>Godkänd för F-skatt</span>
           </div>
         </div>

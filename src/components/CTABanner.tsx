@@ -10,9 +10,9 @@ interface Props {
 
 const defaultHeading = 'Begär en kostnadsfri offert';
 const defaultCheckItems = [
-  'Kostnadsfri rådgivning och platsbesök',
-  'Snabb återkoppling inom 24 timmar',
-  'Verksamma i Orust, Uddevalla och hela Bohuslän',
+  'Kostnadsfri rådgivning och offert',
+  'Auktoriserade elektriker och certifierade VVS-montörer',
+  'Verksamma i Stockholm med omnejd',
 ];
 
 export default function CTABanner({ heading = defaultHeading, checkItems = defaultCheckItems }: Props) {
@@ -25,10 +25,10 @@ export default function CTABanner({ heading = defaultHeading, checkItems = defau
       overflow: 'hidden',
       padding: 'clamp(70px, 9vw, 95px) 0',
     }}>
-      {/* Background Image: Nordisk Bergmark machinery */}
+      {/* Background Image */}
       <img
         src={bgImage}
-        alt="Nordisk Bergmark AB maskiner och utrustning"
+        alt="Söderholms El & VVS installationer och värmepumpar"
         loading="lazy"
         decoding="async"
         style={{

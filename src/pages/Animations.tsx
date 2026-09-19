@@ -205,7 +205,7 @@ function PreviewCard({ def, globalTick }: CardProps) {
           }}
           className="bg-gradient-to-br from-emerald-700 to-teal-900 text-white rounded-xl shadow-xl px-8 py-6 text-center"
         >
-          <div className="text-2xl font-bold tracking-tight">Nordisk Bergmark</div>
+          <div className="text-2xl font-bold tracking-tight">Söderholms El & VVS</div>
           <div className="text-sm opacity-90 mt-1">Animation preview</div>
         </div>
       </div>

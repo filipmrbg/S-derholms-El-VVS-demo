@@ -121,7 +121,7 @@ export default function ProjectsGallery() {
                   textTransform: 'uppercase',
                 }}
               >
-                Projekt i Bohuslän
+                Installationer & Projekt
               </h2>
             </ScrollReveal>
           </div>
@@ -136,7 +136,7 @@ export default function ProjectsGallery() {
                   margin: 0,
                 }}
               >
-                Här kan du se exempel på våra utförda bergsprängnings-, schakt- och markarbeten på Orust och i Bohuslän. Hovra över bandet för att pausa eller klicka på en bild för att förstora.
+                Här kan du se exempel på våra utförda värmepumpsinstallationer, elarbeten och VVS-entreprenader i Stockholm med omnejd. Hovra över bandet för att pausa eller klicka på en bild för att förstora.
               </p>
             </ScrollReveal>
           </div>

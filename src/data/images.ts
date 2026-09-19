@@ -1,5 +1,5 @@
 /**
- * CENTRALIZED IMAGE CONFIGURATION - NORDISK BERGMARK AB
+ * CENTRALIZED IMAGE CONFIGURATION - SÖDERHOLMS EL & VVS
  *
  * All images used across the site are defined here.
  */
@@ -31,6 +31,7 @@ export interface SiteImages {
   };
   whyChooseUs: ImageSlot;
   ideaToResult: ImageSlot;
+  thermia?: ImageSlot;
   portfolio: {
     image: ImageSlot;
     title: string;
@@ -41,135 +42,155 @@ export interface SiteImages {
 const images: SiteImages = {
   logo: {
     url: '/logo.png',
-    alt: 'Nordisk Bergmark AB - Bergsprängning, stenspräckning och markarbeten på Orust och i Bohuslän',
+    alt: 'Söderholms El & VVS - Auktoriserad elinstallation, VVS och Thermia värmepumpar i Stockholm',
   },
   logoDark: {
     url: '/logo-dark.png',
-    alt: 'Nordisk Bergmark AB',
+    alt: 'Söderholms El & VVS',
   },
   ogImage: {
     url: '/og-image.png',
-    alt: 'Nordisk Bergmark AB Logotyp',
+    alt: 'Söderholms El & VVS Logotyp',
+  },
+  thermia: {
+    url: '/thermia-badge.png',
+    alt: 'Thermia - Pionjären inom värmepumpar • Auktoriserad Partner',
   },
 
   hero: {
     background: {
-      url: '/hero-main.webp',
-      alt: 'Nordisk Bergmark AB professionella markarbeten, bergsprängning och schaktning',
+      url: '',
+      alt: 'Söderholms El & VVS i Stockholm - El, VVS och Thermia Värmepumpar sedan 1942',
     },
-    videoUrl: 'https://d8j0ntlcm91z4.cloudfront.net/user_3G5LlmMYORSdAk8SxzXrK2S0Is5/hf_20260918_142212_05bae687-470d-442c-a0d8-78c8ac61ca86.mp4',
+    videoUrl: 'https://d8j0ntlcm91z4.cloudfront.net/user_3G5LlmMYORSdAk8SxzXrK2S0Is5/hf_20260819_171627_1dba7b55-8a8c-498d-8342-d3f797bd45f9.mp4',
   },
 
   services: {
-    'bergsprangning': {
-      url: '/gallery/gallery-3.jpg',
-      alt: 'Bergsprängning och stenspräckning på Orust och i Bohuslän',
-    },
-    'markarbete': {
+    'elinstallation': {
       url: '/gallery/gallery-1.jpg',
-      alt: 'Markarbete och grävning för fastigheter och tomter',
+      alt: 'Auktoriserade elinstallationer och elservice i Stockholm',
     },
-    'dranering': {
-      url: '/service-dranering.webp',
-      alt: 'Husdränering och dagvattenledningar',
+    'vvs-arbeten': {
+      url: '/gallery/gallery-2.jpg',
+      alt: 'Professionella VVS-arbeten och rörinstallationer i Stockholm',
     },
-    'snorojning': {
-      url: '/service-snorojning.jpg',
-      alt: 'Snöröjning, snöplogning och halkbekämpning i Bohuslän',
+    'varmepumpar': {
+      url: '/gallery/gallery-5.jpg',
+      alt: 'Installation av Thermia värmepumpar i Stockholm',
+    },
+    'service-underhall': {
+      url: '/gallery/gallery-3.jpg',
+      alt: 'Service och underhåll av Thermia värmepumpar',
     },
   },
 
   gallery: [
     {
       url: '/gallery/gallery-1.jpg',
-      alt: 'Bandgrävare Volvo under markberedning och tomtplanering',
+      alt: 'Installation av Pahlén poolvärmepump med el- och VVS-anslutningar',
     },
     {
       url: '/gallery/gallery-2.jpg',
-      alt: 'Minigrävare vid stenspräckning och bergsschakt intill villa',
+      alt: 'Thermia bergvärmepump med ackumulatortank och kopparrörsinstallation',
     },
     {
       url: '/gallery/gallery-3.jpg',
-      alt: 'Bergsprängning med sprängmattor på skärgårdstomt i Bohuslän',
+      alt: 'Service och underhåll av Thermia Diplomat värmepump',
     },
     {
       url: '/gallery/gallery-4.jpg',
-      alt: 'Precisionssprängning under sprängmattor',
+      alt: 'VVS-montör och certifierad värmepumpstekniker vid driftsatt anläggning',
     },
     {
-      url: '/about.jpg',
-      alt: 'Atlas Copco borrigg för bergborrning Nordisk Bergmark AB',
+      url: '/gallery/gallery-5.jpg',
+      alt: 'Komplett modern värmeanläggning med Thermia värmepump för fastighet',
+    },
+    {
+      url: '/gallery/gallery-6.jpg',
+      alt: 'Modernisering av värmesystem med energieffektiv Thermia värmepump',
     },
   ],
 
   cta: {
     banner: {
-      url: '/gallery/gallery-3.jpg',
-      alt: 'Nordisk Bergmark AB bergsprängning och markarbete',
+      url: '/gallery/gallery-2.jpg',
+      alt: 'Söderholms El & VVS - Kontakta oss för rådgivning och offert',
     },
     midSection: {
-      url: '/gallery/gallery-2.jpg',
-      alt: 'Nordisk Bergmark AB schakt och stenspräckning',
+      url: '/gallery/gallery-5.jpg',
+      alt: 'Söderholms El & VVS - Certifierad Thermia installatör',
     },
   },
 
   about: {
     hero: {
       url: '/about.jpg',
-      alt: 'Nordisk Bergmark AB borrigg och maskinpark på Orust och i Bohuslän',
+      alt: 'Söderholms El & VVS auktoriserade elektriker och VVS-montörer i Stockholm',
+    },
+    teamMember: {
+      url: '/about.jpg',
+      alt: 'Värmepumpstekniker och VVS-montör Söderholms El & VVS',
     },
   },
 
   whyChooseUs: {
-    url: '/gallery/gallery-1.jpg',
-    alt: 'Professionella markarbeten med modern maskinpark - Nordisk Bergmark AB',
+    url: '/gallery/gallery-2.jpg',
+    alt: 'Högkvalitativa installationer och personlig service sedan 1942',
   },
 
   ideaToResult: {
-    url: '/gallery/gallery-3.jpg',
-    alt: 'Från berg och råmark till färdig tomt i Bohuslän',
+    url: '/gallery/gallery-5.jpg',
+    alt: 'Från rådgivning och dimensionering till färdig värmepumpsinstallation',
   },
 
   portfolio: [
     {
       image: {
-        url: '/gallery/gallery-3.jpg',
-        alt: 'Bergsprängning för nybyggnation på havstomt i Bohuslän',
-      },
-      title: 'Bergsprängning Havstomt',
-      category: 'Bergsprängning',
-    },
-    {
-      image: {
         url: '/gallery/gallery-2.jpg',
-        alt: 'Skonsam stenspräckning intill befintlig villa och trädgård',
+        alt: 'Thermia bergvärmepump installerad i villa',
       },
-      title: 'Stenspräckning Villa',
-      category: 'Stenspräckning',
+      title: 'Thermia Bergvärme Villa',
+      category: 'Värmepumpar',
     },
     {
       image: {
         url: '/gallery/gallery-1.jpg',
-        alt: 'Tomtplanering och grundschaktning på Orust',
+        alt: 'Installation av Pahlén poolvärmepump',
       },
-      title: 'Markarbete & Tomtplanering',
-      category: 'Markarbeten',
+      title: 'Installation av Poolvärmepump',
+      category: 'Värmepumpar & El',
     },
     {
       image: {
-        url: '/about.jpg',
-        alt: 'Borrning i granit med modern bandburen borrigg',
+        url: '/gallery/gallery-5.jpg',
+        alt: 'Komplett värmecentral för fastighet',
       },
-      title: 'Bergborrning med Borrigg',
-      category: 'Bergborrning',
+      title: 'Värmeanläggning Fastighet',
+      category: 'VVS & Värme',
+    },
+    {
+      image: {
+        url: '/gallery/gallery-3.jpg',
+        alt: 'Regelbunden service av Thermia Diplomat',
+      },
+      title: 'Service & Underhåll Värmepump',
+      category: 'Service',
     },
     {
       image: {
         url: '/gallery/gallery-4.jpg',
-        alt: 'Säker bergsprängning under sprängmattor',
+        alt: 'Driftsättning av energieffektiv Thermia värmepump',
       },
-      title: 'Precisionssprängning Berg',
-      category: 'Bergarbeten',
+      title: 'Komplett Värmepumpsbyte',
+      category: 'Totalentreprenad',
+    },
+    {
+      image: {
+        url: '/gallery/gallery-6.jpg',
+        alt: 'Rördragning och byte till modern Thermia pump',
+      },
+      title: 'Modernisering Värmesystem',
+      category: 'VVS & Rör',
     },
   ],
 };

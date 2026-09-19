@@ -1,4 +1,4 @@
-import { ShieldCheck, Award, Users } from 'lucide-react';
+import { ShieldCheck, Award, Users, CheckCircle2 } from 'lucide-react';
 import ScrollReveal from '../components/ScrollReveal';
 import Button from '../components/Button';
 import CTABanner from '../components/CTABanner';
@@ -13,8 +13,8 @@ const container: React.CSSProperties = {
 
 export default function About() {
   usePageTitle(
-    'Om Nordisk Bergmark AB | Bergarbeten & Markentreprenad i Bohuslän',
-    'Läs om Nordisk Bergmark AB. Vi är specialister på bergsprängning, bergborrning, stenspräckning och markarbeten på Orust, i Uddevalla och hela Bohuslän.'
+    'Om Söderholms El & VVS | El & VVS i Stockholm sedan 1942',
+    'Läs om Söderholms El & VVS. Sedan 1942 erbjuder vi auktoriserad elinstallation, professionell VVS och certifierad installation av Thermia värmepumpar i Stockholm.'
   );
 
   return (
@@ -30,7 +30,7 @@ export default function About() {
         paddingBottom: '70px',
         textAlign: 'center',
       }}>
-        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(15, 23, 42, 0.85) 0%, rgba(15, 23, 42, 0.76) 100%)' }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(15, 23, 42, 0.88) 0%, rgba(15, 23, 42, 0.80) 100%)' }} />
         <div style={{ ...container, position: 'relative', zIndex: 1 }}>
           <div>
             <ScrollReveal animation="blur-in">
@@ -41,12 +41,12 @@ export default function About() {
                 margin: '0 0 16px 0',
                 lineHeight: 1.15,
               }}>
-                Om Nordisk Bergmark AB
+                Om Söderholms El & VVS
               </h1>
             </ScrollReveal>
             <ScrollReveal animation="fade-up" delay={150}>
               <p style={{ color: 'rgba(255,255,255,0.92)', fontSize: '1.08rem', margin: '0 auto', maxWidth: '660px', lineHeight: 1.6 }}>
-                Specialister på bergsprängning, stenspräckning, dränering och markarbeten med utgångspunkt från Orust över hela Bohuslän.
+                Över 80 års hantverkstradition och spetskompetens inom el, VVS och energieffektiva Thermia värmepumpar i hela Stockholmsregionen.
               </p>
             </ScrollReveal>
           </div>
@@ -58,7 +58,7 @@ export default function About() {
         <div style={{ ...container, maxWidth: '1060px' }}>
           <div className="about-content-grid" style={{
             display: 'grid',
-            gridTemplateColumns: '320px 1fr',
+            gridTemplateColumns: '340px 1fr',
             gap: '50px',
             alignItems: 'start',
           }}>
@@ -73,12 +73,12 @@ export default function About() {
               }}>
                 <img
                   src={images.about.hero.url || '/about.jpg'}
-                  alt="Nordisk Bergmark AB maskinpark och verksamhet"
+                  alt="Söderholms El & VVS montör och värmepumpsinstallation"
                   loading="eager"
                   decoding="async"
                   style={{
                     width: '100%',
-                    maxWidth: '320px',
+                    maxWidth: '340px',
                     height: 'auto',
                     objectFit: 'cover',
                     borderRadius: '20px',
@@ -105,7 +105,7 @@ export default function About() {
                   padding: '4px 14px',
                   borderRadius: '999px',
                 }}>
-                  Vår Bakgrund & Expertis
+                  Vår historia & hantverkstradition
                 </span>
                 <h2 style={{
                   color: 'var(--color-text-dark)',
@@ -114,7 +114,7 @@ export default function About() {
                   lineHeight: 1.2,
                   margin: '0 0 20px 0',
                 }}>
-                  Säkra bergarbeten och gedigen markentreprenad
+                  Kvalitet och trygghet i generationer sedan 1942
                 </h2>
               </ScrollReveal>
               <ScrollReveal animation="fade-up" delay={100}>
@@ -126,7 +126,7 @@ export default function About() {
                     margin: '0 0 20px 0',
                     fontWeight: 500,
                   }}>
-                    Nordisk Bergmark AB grundades med ambitionen att erbjuda marknadens mest pålitliga och säkra lösningar inom bergsprängning, bergborrning, stenspräckning och markarbeten.
+                    Söderholms El & VVS har en stolt historia som sträcker sig tillbaka till 1942. Under mer än åtta decennier har vi försett villaägare, fastighetsägare och bostadsrättsföreningar i hela Stockholmsregionen med pålitliga och säkra installationer.
                   </p>
                   
                   <p style={{
@@ -135,7 +135,7 @@ export default function About() {
                     lineHeight: 1.8,
                     margin: '0 0 20px 0',
                   }}>
-                    Med utgångspunkt från Orust arbetar vi över hela Bohuslän och Västra Götaland åt privatpersoner, byggentreprenörer, lantbruk och fastighetsägare. Vi förstår de unika geologiska utmaningarna i den bohuslänska terrängen och utför allt från försiktig stenspräckning intill villagrunder till omfattande bergborrning, tomtplanering, dränering och vinterväghållning.
+                    Som auktoriserad elinstallatör och certifierad återförsäljare samt installatör av Thermia värmepumpar förenar vi gediget hantverkskunnande med den senaste tekniken inom energieffektivisering. Vi erbjuder helhetslösningar där el, rör och styrning samverkar optimalt för lägsta möjliga driftkostnad och maximal livslängd.
                   </p>
 
                   <p style={{
@@ -144,7 +144,7 @@ export default function About() {
                     lineHeight: 1.8,
                     margin: '0 0 24px 0',
                   }}>
-                    Vårt fokus ligger alltid på högsta säkerhet, precision och kundnöjdhet. Genom moderna borriggar, bandburna grävmaskiner och beprövade metoder säkerställer vi att varje projekt levereras i tid, enligt budget och med minsta möjliga omgivningspåverkan.
+                    Vårt fokus ligger alltid på högsta säkerhet, punktlighet och personlig service. Samtliga arbeten utförs av behöriga fackmän i enlighet med gällande branschregler och med full garanti på både arbete och materiel.
                   </p>
 
                   {/* Vision Card */}
@@ -163,7 +163,7 @@ export default function About() {
                       lineHeight: 1.5,
                       margin: '0 0 10px 0',
                     }}>
-                      Vår vision: Säkra och hållbara mark- och berglösningar anpassade efter Bohusläns granit.
+                      Vår vision: Framtidssäkra och energieffektiva helhetslösningar för Stockholms fastigheter.
                     </p>
                     <p style={{
                       color: 'var(--color-gray-600)',
@@ -171,7 +171,7 @@ export default function About() {
                       lineHeight: 1.65,
                       margin: '0 0 12px 0',
                     }}>
-                      Oavsett om du bygger nytt hus, ska dränera fastigheten eller behöver spräcka bort bergklackar på tomten är vi en tillgänglig och engagerad partner från första rådgivning till slutfört markarbete.
+                      Oavsett om du planerar att byta till bergvärme, behöver en komplett elrenovering eller vill boka förebyggande underhållsservice är vi en tillgänglig och engagerad partner genom hela processen.
                     </p>
                     <span style={{
                       color: '#0f172a',
@@ -179,12 +179,12 @@ export default function About() {
                       fontSize: '0.9rem',
                       display: 'block',
                     }}>
-                      Nordisk Bergmark AB • Orust & Bohuslän
+                      Söderholms El & VVS • Stockholm med omnejd
                     </span>
                   </div>
 
                   <Button variant="primary" size="lg" href="/kontakt">
-                    Kontakta oss för offert & rådgivning
+                    Kontakta oss för rådgivning & offert
                   </Button>
                 </div>
               </ScrollReveal>
@@ -194,6 +194,139 @@ export default function About() {
         </div>
       </section>
 
+      {/* ── SECTION C: TEAM SETUP (RULE 7) ───────────────────────────── */}
+      <section style={{ background: '#ffffff', padding: '90px 0', borderTop: '1px solid #e2e8f0' }}>
+        <div style={container}>
+          <div style={{ textAlign: 'center', maxWidth: '640px', margin: '0 auto 56px auto' }}>
+            <ScrollReveal animation="blur-in">
+              <span style={{
+                color: '#0f172a',
+                fontWeight: 700,
+                fontSize: '0.8rem',
+                letterSpacing: '0.08em',
+                textTransform: 'uppercase',
+                display: 'inline-block',
+                marginBottom: '10px',
+                background: '#e2e8f0',
+                padding: '4px 14px',
+                borderRadius: '999px',
+              }}>
+                Vårt Team
+              </span>
+              <h2 style={{
+                color: 'var(--color-text-dark)',
+                fontWeight: 700,
+                fontSize: 'clamp(2rem, 3.4vw, 2.6rem)',
+                margin: 0,
+                lineHeight: 1.2,
+              }}>
+                Erfarna fackmän med rätt behörigheter
+              </h2>
+              <p style={{ color: 'var(--color-gray-600)', fontSize: '1rem', lineHeight: 1.7, marginTop: '14px' }}>
+                Vårt team består av certifierade elektriker, VVS-montörer och värmepumpstekniker som sätter kvalitet, noggrannhet och kundtrygghet i främsta rummet.
+              </p>
+            </ScrollReveal>
+          </div>
+
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(3, 1fr)',
+            gap: '30px',
+          }} className="team-grid">
+            {[
+              {
+                name: 'Mikael Söderholm',
+                role: 'VD & Projektledare',
+                image: '/gallery/gallery-4.jpg',
+                description: 'Leder verksamheten med fokus på kundrelationer, energikalkyler och helhetslösningar för villor och fastigheter.',
+                credentials: '80+ års familjetradition • Projektledning',
+              },
+              {
+                name: 'Erik Lindqvist',
+                role: 'Auktoriserad Elinstallatör',
+                image: '/about-us.jpg',
+                description: 'Specialist på elcentraler, smart styrning, kraftmatningar och elinstallationer i såväl moderna som äldre fastigheter.',
+                credentials: 'Auktoriserad av Elsäkerhetsverket',
+              },
+              {
+                name: 'Johan Bergström',
+                role: 'Certifierad VVS- & Värmepumpstekniker',
+                image: '/gallery/gallery-3.jpg',
+                description: 'Expert på Thermia värmepumpar, rörinstallationer, driftsättning och optimering av värmesystem.',
+                credentials: 'Thermia Certifierad • Säker Vatten',
+              },
+            ].map((member, i) => (
+              <ScrollReveal key={i} animation="fade-up" delay={i * 120}>
+                <div style={{
+                  background: '#f8fafc',
+                  border: '1px solid #e2e8f0',
+                  borderRadius: '20px',
+                  overflow: 'hidden',
+                  height: '100%',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  boxShadow: '0 4px 16px rgba(0,0,0,0.04)',
+                  transition: 'transform 0.25s ease, box-shadow 0.25s ease',
+                }}>
+                  <div style={{ height: '240px', overflow: 'hidden', position: 'relative' }}>
+                    <img
+                      src={member.image}
+                      alt={`${member.name} - ${member.role}`}
+                      style={{
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'cover',
+                        objectPosition: 'center 30%',
+                        display: 'block',
+                      }}
+                    />
+                  </div>
+                  <div style={{ padding: '24px', flex: 1, display: 'flex', flexDirection: 'column' }}>
+                    <h3 style={{
+                      fontSize: '1.2rem',
+                      fontWeight: 700,
+                      color: 'var(--color-text-dark)',
+                      margin: '0 0 4px 0',
+                    }}>
+                      {member.name}
+                    </h3>
+                    <p style={{
+                      color: '#0f172a',
+                      fontWeight: 600,
+                      fontSize: '0.9rem',
+                      margin: '0 0 12px 0',
+                    }}>
+                      {member.role}
+                    </p>
+                    <p style={{
+                      color: 'var(--color-gray-600)',
+                      fontSize: '0.92rem',
+                      lineHeight: 1.6,
+                      margin: '0 0 16px 0',
+                      flex: 1,
+                    }}>
+                      {member.description}
+                    </p>
+                    <div style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '6px',
+                      paddingTop: '12px',
+                      borderTop: '1px solid #e2e8f0',
+                      fontSize: '0.82rem',
+                      color: '#475569',
+                      fontWeight: 500,
+                    }}>
+                      <CheckCircle2 size={16} color="#0f172a" />
+                      <span>{member.credentials}</span>
+                    </div>
+                  </div>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* ── SECTION D: KÄRNVÄRDEN / TRYGGHET ─────────────────────────── */}
       <section style={{ background: '#f8fafc', padding: '80px 0', borderTop: '1px solid #e2e8f0' }}>
@@ -206,20 +339,21 @@ export default function About() {
             {[
               {
                 icon: ShieldCheck,
-                title: 'Säkerhet & Behörighet',
-                desc: 'Alla spräng- och markarbeten utförs med fullständiga behörigheter, riskanalyser och godkänd sprängarutrustning.',
+                title: 'Auktorisation & Behörighet',
+                desc: 'Full behörighet från Elsäkerhetsverket och certifierade VVS-tekniker borgar för trygga och godkända installationer.',
               },
               {
+                badgeImage: '/thermia-badge.png',
                 icon: Award,
-                title: 'Modern maskinpark',
-                desc: 'Bandburna borriggar och flexibla grävmaskiner anpassade för tuff bohuslänsk terräng och trånga villatomter.',
+                title: 'Thermia Auktorisation',
+                desc: 'Som officiell återförsäljare och installatör erbjuder vi marknadsledande garantier och djup expertis på Thermias värmepumpar.',
               },
               {
                 icon: Users,
-                title: 'Lokal förankring',
-                desc: 'Vi utgår från Orust och betjänar hela Bohuslän med snabb etablering, god lokalkännedom och personlig service.',
+                title: 'Lokal närvaro i Stockholm',
+                desc: 'Vi betjänar hela Storstockholm med snabb inställelsetid, personlig rådgivning och långsiktig service sedan 1942.',
               },
-            ].map(({ icon: Icon, title, desc }, i) => (
+            ].map((item, i) => (
               <ScrollReveal key={i} animation="fade-up" delay={i * 100}>
                 <div style={{
                   background: '#ffffff',
@@ -233,14 +367,25 @@ export default function About() {
                     width: '46px',
                     height: '46px',
                     borderRadius: '12px',
-                    background: '#0F172A',
+                    background: item.badgeImage ? '#ffffff' : '#0F172A',
+                    border: item.badgeImage ? '1px solid #e2e8f0' : 'none',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
                     marginBottom: '16px',
-                    boxShadow: '0 4px 12px rgba(15, 23, 42, 0.12)',
+                    boxShadow: '0 4px 12px rgba(15, 23, 42, 0.08)',
+                    padding: item.badgeImage ? '4px' : '0',
+                    boxSizing: 'border-box',
                   }}>
-                    <Icon size={24} color="#ffffff" />
+                    {item.badgeImage ? (
+                      <img
+                        src={item.badgeImage}
+                        alt="Thermia Auktoriserad Partner"
+                        style={{ height: '36px', width: 'auto', objectFit: 'contain' }}
+                      />
+                    ) : (
+                      <item.icon size={24} color="#ffffff" />
+                    )}
                   </div>
                   <h3 style={{
                     fontSize: '1.1rem',
@@ -248,7 +393,7 @@ export default function About() {
                     color: 'var(--color-text-dark)',
                     margin: '0 0 10px 0',
                   }}>
-                    {title}
+                    {item.title}
                   </h3>
                   <p style={{
                     margin: 0,
@@ -256,7 +401,7 @@ export default function About() {
                     fontSize: '0.92rem',
                     lineHeight: 1.6,
                   }}>
-                    {desc}
+                    {item.desc}
                   </p>
                 </div>
               </ScrollReveal>
@@ -277,6 +422,10 @@ export default function About() {
           .about-content-grid img {
             max-width: 260px !important;
             margin: 0 auto;
+          }
+          .team-grid {
+            grid-template-columns: 1fr !important;
+            gap: 24px !important;
           }
           .values-grid {
             grid-template-columns: 1fr !important;

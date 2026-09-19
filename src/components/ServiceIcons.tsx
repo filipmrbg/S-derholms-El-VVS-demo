@@ -8,10 +8,10 @@ interface IconProps {
 }
 
 /**
- * 1. Bergsprängning & Stenspräckning
- * Facetterat berg, sprängkilar, precisionsspräckning och detonationsstrålar
+ * 1. Elinstallation & Elservice
+ * Precision lightning bolt, circuit wiring and energy shield
  */
-export function RockBlastingIcon({
+export function ElectricalIcon({
   color = 'currentColor',
   size = 42,
   className,
@@ -27,130 +27,73 @@ export function RockBlastingIcon({
       className={className}
       style={{ display: 'block', overflow: 'visible', ...style }}
     >
-      {/* Facetterad bergsformation */}
+      <circle cx="24" cy="24" r="20" stroke={color} strokeWidth="2" strokeDasharray="3 3" opacity="0.4" />
       <path
-        d="M6 39L14 20L24 13L34 20L42 39H6Z"
+        d="M26 6L14 26H24L22 42L34 22H24L26 6Z"
         stroke={color}
         strokeWidth="2.4"
+        strokeLinecap="round"
         strokeLinejoin="round"
         fill={color}
-        fillOpacity="0.08"
+        fillOpacity="0.12"
       />
-      {/* Centrala spräcklinjer och kilar */}
+    </svg>
+  );
+}
+
+/**
+ * 2. VVS & Rörarbeten
+ * Pipe system, pressure valve and water flow
+ */
+export function PlumbingIcon({
+  color = 'currentColor',
+  size = 42,
+  className,
+  style,
+}: IconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 48 48"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      style={{ display: 'block', overflow: 'visible', ...style }}
+    >
       <path
-        d="M24 13L21 26L27 31L24 39"
+        d="M8 14H24C28.4183 14 32 17.5817 32 22V40"
         stroke={color}
         strokeWidth="2.6"
         strokeLinecap="round"
-        strokeLinejoin="round"
       />
       <path
-        d="M14 20L21 26"
+        d="M40 34H32"
         stroke={color}
-        strokeWidth="2"
+        strokeWidth="2.4"
         strokeLinecap="round"
       />
+      <rect x="6" y="10" width="4" height="8" rx="1" fill={color} />
+      <rect x="30" y="38" width="8" height="4" rx="1" fill={color} />
+      {/* Water droplet */}
       <path
-        d="M34 20L27 31"
+        d="M20 28C20 28 14 34.5 14 37.5C14 39.9853 16.0147 42 18.5 42C20.9853 42 23 39.9853 23 37.5C23 34.5 20 28 20 28Z"
         stroke={color}
-        strokeWidth="2"
-        strokeLinecap="round"
-      />
-      {/* Detonations- och expansionsstrålar vid bergsprängning */}
-      <line x1="24" y1="5" x2="24" y2="9" stroke={color} strokeWidth="2.6" strokeLinecap="round" />
-      <line x1="15" y1="7" x2="18" y2="11" stroke={color} strokeWidth="2.4" strokeLinecap="round" />
-      <line x1="33" y1="7" x2="30" y2="11" stroke={color} strokeWidth="2.4" strokeLinecap="round" />
-      <line x1="8" y1="15" x2="12" y2="17" stroke={color} strokeWidth="2.2" strokeLinecap="round" />
-      <line x1="40" y1="15" x2="36" y2="17" stroke={color} strokeWidth="2.2" strokeLinecap="round" />
-      {/* Marklinje */}
-      <line x1="3" y1="39" x2="45" y2="39" stroke={color} strokeWidth="2.4" strokeLinecap="round" opacity="0.35" />
-    </svg>
-  );
-}
-
-/**
- * 2. Markarbete & Grävning
- * Robust bandgrävare med hytt, larvband och ledburen grävarm med skopa
- */
-export function ExcavationIcon({
-  color = 'currentColor',
-  size = 42,
-  className,
-  style,
-}: IconProps) {
-  return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 48 48"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className={className}
-      style={{ display: 'block', overflow: 'visible', ...style }}
-    >
-      {/* Larvband / bandchassi */}
-      <rect
-        x="7"
-        y="32"
-        width="34"
-        height="9"
-        rx="4.5"
-        stroke={color}
-        strokeWidth="2.3"
-        fill={color}
-        fillOpacity="0.08"
-      />
-      <circle cx="13.5" cy="36.5" r="2" fill={color} />
-      <circle cx="24" cy="36.5" r="2" fill={color} />
-      <circle cx="34.5" cy="36.5" r="2" fill={color} />
-      {/* Maskinkropp och förarhytt */}
-      <path
-        d="M10 32V19C10 17.5 11.5 16 13 16H23C24.5 16 26 17.5 26 19V32"
-        stroke={color}
-        strokeWidth="2.3"
-        strokeLinejoin="round"
-      />
-      {/* Hyttfönster */}
-      <path
-        d="M14 19H22V25H14V19Z"
-        stroke={color}
-        strokeWidth="1.8"
+        strokeWidth="2.2"
         fill={color}
         fillOpacity="0.15"
       />
-      {/* Ledburen grävarm och hydraulik */}
-      <path
-        d="M25 24L33 11L41 21"
-        stroke={color}
-        strokeWidth="2.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <circle cx="33" cy="11" r="2" fill={color} />
-      {/* Grävskopa med tänder */}
-      <path
-        d="M41 21L37 26C36.5 28 38 30 40 30L43 29L44 24L41 21Z"
-        stroke={color}
-        strokeWidth="2"
-        strokeLinejoin="round"
-        fill={color}
-        fillOpacity="0.2"
-      />
-      <path
-        d="M37 27L35 29M39.5 30L38.5 32M42.5 29.5L42.5 32"
-        stroke={color}
-        strokeWidth="1.8"
-        strokeLinecap="round"
-      />
+      {/* Valve handle */}
+      <circle cx="20" cy="14" r="3" stroke={color} strokeWidth="2.2" fill="#ffffff" />
     </svg>
   );
 }
 
 /**
- * 3. Dränering & Dagvatten
- * Husgrundsvägg med fuktspärr, perforerat dräneringsrör, makadambädd och vattenflöde
+ * 3. Thermia Värmepumpar
+ * Modern cabinet heat pump with thermal cycle waves
  */
-export function DrainageIcon({
+export function HeatPumpIcon({
   color = 'currentColor',
   size = 42,
   className,
@@ -166,59 +109,48 @@ export function DrainageIcon({
       className={className}
       style={{ display: 'block', overflow: 'visible', ...style }}
     >
-      {/* Källarvägg och grundsula */}
-      <path
-        d="M9 8V35H24V41H5V35H9"
-        stroke={color}
-        strokeWidth="2.4"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      {/* Fuktskydd / dräneringsskiva skift */}
-      <line x1="9" y1="16" x2="19" y2="16" stroke={color} strokeWidth="2" strokeLinecap="round" />
-      <line x1="9" y1="24" x2="19" y2="24" stroke={color} strokeWidth="2" strokeLinecap="round" />
-      <line x1="9" y1="32" x2="19" y2="32" stroke={color} strokeWidth="2" strokeLinecap="round" />
-      {/* Perforerat dräneringsrör vid grundsulan */}
-      <circle
-        cx="34"
-        cy="33"
-        r="7.5"
+      {/* Cabinet */}
+      <rect
+        x="10"
+        y="6"
+        width="28"
+        height="36"
+        rx="3"
         stroke={color}
         strokeWidth="2.4"
         fill={color}
         fillOpacity="0.08"
       />
-      <circle
-        cx="34"
-        cy="33"
-        r="3"
+      {/* Display screen */}
+      <rect x="18" y="12" width="12" height="8" rx="1.5" stroke={color} strokeWidth="1.8" />
+      {/* Thermal wave lines */}
+      <path
+        d="M16 26C18 24.5 20 24.5 22 26C24 27.5 26 27.5 28 26C30 24.5 32 24.5 32 26"
         stroke={color}
         strokeWidth="2"
-      />
-      {/* Dräneringsmakadam / filtergrus */}
-      <circle cx="34" cy="21" r="1.4" fill={color} />
-      <circle cx="28" cy="24" r="1.4" fill={color} />
-      <circle cx="40" cy="24" r="1.4" fill={color} />
-      {/* Vattendroppar som leds bort från grunden */}
-      <path
-        d="M25 11C25 11 23 14 23 15.5C23 16.8 24 17.8 25 17.8C26 17.8 27 16.8 27 15.5C27 14 25 11 25 11Z"
-        fill={color}
+        strokeLinecap="round"
       />
       <path
-        d="M33 7C33 7 31 10 31 11.5C31 12.8 32 13.8 33 13.8C34 13.8 35 12.8 35 11.5C35 10 33 7 33 7Z"
-        fill={color}
+        d="M16 31C18 29.5 20 29.5 22 31C24 32.5 26 32.5 28 31C30 29.5 32 29.5 32 31"
+        stroke={color}
+        strokeWidth="2"
+        strokeLinecap="round"
       />
-      {/* Schaktbotten */}
-      <line x1="25" y1="41" x2="43" y2="41" stroke={color} strokeWidth="2.4" strokeLinecap="round" opacity="0.35" />
+      <path
+        d="M16 36C18 34.5 20 34.5 22 36C24 37.5 26 37.5 28 36C30 34.5 32 34.5 32 36"
+        stroke={color}
+        strokeWidth="2"
+        strokeLinecap="round"
+      />
     </svg>
   );
 }
 
 /**
- * 4. Snöröjning & Markunderhåll
- * Kraftigt plogblad i arbete kombinerat med distinkt snöstjärneemblem
+ * 4. Service & Underhåll
+ * Precision wrench and shield for reliability
  */
-export function SnowPlowIcon({
+export function MaintenanceIcon({
   color = 'currentColor',
   size = 42,
   className,
@@ -234,36 +166,23 @@ export function SnowPlowIcon({
       className={className}
       style={{ display: 'block', overflow: 'visible', ...style }}
     >
-      {/* Snöstjärna / vinterväghållning */}
-      <line x1="24" y1="6" x2="24" y2="24" stroke={color} strokeWidth="2.4" strokeLinecap="round" />
-      <line x1="15" y1="11" x2="33" y2="19" stroke={color} strokeWidth="2.2" strokeLinecap="round" />
-      <line x1="33" y1="11" x2="15" y2="19" stroke={color} strokeWidth="2.2" strokeLinecap="round" />
-      <path d="M21 8L24 11L27 8" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-      <path d="M17 15L20 16.5L18.5 19" stroke={color} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-      <path d="M31 15L28 16.5L29.5 19" stroke={color} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-      <circle cx="24" cy="15" r="1.8" fill={color} />
-      {/* Plogblad / snöplogprofil */}
+      {/* Shield */}
       <path
-        d="M7 36C15 36 26 33 37 26L41 21"
+        d="M24 6L38 12V22C38 31 32 38.5 24 42C16 38.5 10 31 10 22V12L24 6Z"
         stroke={color}
-        strokeWidth="2.8"
-        strokeLinecap="round"
+        strokeWidth="2.2"
+        fill={color}
+        fillOpacity="0.08"
+        strokeLinejoin="round"
       />
+      {/* Wrench inside */}
       <path
-        d="M5 38L37 27"
+        d="M21 21L29 29M28 20L31 17C32.5 18.5 32.5 20.5 31 22L29 24L26 21L28 20ZM19 29L16 32C15 33 15 34 16 35C17 36 18 36 19 35L22 32L19 29Z"
         stroke={color}
         strokeWidth="2.2"
         strokeLinecap="round"
+        strokeLinejoin="round"
       />
-      <path
-        d="M14 34L18 27M23 32L27 25"
-        stroke={color}
-        strokeWidth="2"
-        strokeLinecap="round"
-        opacity="0.5"
-      />
-      {/* Vägbanelinje */}
-      <line x1="3" y1="41" x2="45" y2="41" stroke={color} strokeWidth="2.4" strokeLinecap="round" opacity="0.35" />
     </svg>
   );
 }
@@ -282,26 +201,25 @@ export function ServiceIcon({
   style?: React.CSSProperties;
 }) {
   switch (type) {
-    case 'bergsprangning':
-    case 'stensprackning':
-    case 'bergborrning':
-      return <RockBlastingIcon color={color} size={size} className={className} style={style} />;
-    case 'markarbete':
-    case 'gravning':
-    case 'schakt':
-      return <ExcavationIcon color={color} size={size} className={className} style={style} />;
-    case 'dranering':
-    case 'dagvatten':
-    case 'fuktskydd':
-      return <DrainageIcon color={color} size={size} className={className} style={style} />;
-    case 'snorojning':
-    case 'markunderhall':
-    case 'vinter':
-      return <SnowPlowIcon color={color} size={size} className={className} style={style} />;
+    case 'elinstallation':
+    case 'el':
+    case 'elservice':
+      return <ElectricalIcon color={color} size={size} className={className} style={style} />;
+    case 'vvs-arbeten':
+    case 'vvs':
+    case 'ror':
+      return <PlumbingIcon color={color} size={size} className={className} style={style} />;
+    case 'varmepumpar':
+    case 'thermia':
+    case 'varme':
+      return <HeatPumpIcon color={color} size={size} className={className} style={style} />;
+    case 'service-underhall':
+    case 'service':
+    case 'underhall':
+      return <MaintenanceIcon color={color} size={size} className={className} style={style} />;
     default:
-      return <RockBlastingIcon color={color} size={size} className={className} style={style} />;
+      return <HeatPumpIcon color={color} size={size} className={className} style={style} />;
   }
 }
 
 export default ServiceIcon;
-

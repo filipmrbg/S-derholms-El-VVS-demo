@@ -14,8 +14,8 @@ const container: React.CSSProperties = {
 
 export default function ServicesOverview() {
   usePageTitle(
-    'Våra Tjänster | Nordisk Bergmark AB',
-    'Utforska våra tjänster inom bergsprängning, bergborrning, stenspräckning, markarbeten, dränering och snöröjning i hela Bohuslän.'
+    'Våra Tjänster | Söderholms El & VVS',
+    'Utforska våra tjänster inom Thermia värmepumpar, elinstallationer, VVS-arbeten samt service och underhåll i Stockholm med omnejd.'
   );
 
   const { hash } = useLocation();
@@ -93,7 +93,7 @@ export default function ServicesOverview() {
               margin: '0 auto',
               lineHeight: 1.65,
             }}>
-              Nordisk Bergmark AB erbjuder professionella och säkra lösningar inom bergsprängning, stenspräckning, markarbeten och dränering på Orust och i hela Bohuslän.
+              Söderholms El & VVS erbjuder auktoriserade installationer och helhetslösningar inom el, VVS och Thermia värmepumpar i hela Stockholmsregionen.
             </p>
           </ScrollReveal>
         </div>

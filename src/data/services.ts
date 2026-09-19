@@ -34,122 +34,122 @@ export interface ServiceItem {
 
 export const services: ServiceItem[] = [
   {
-    slug: 'bergsprangning',
-    title: 'Bergsprängning',
-    shortDescription: 'Säker och certifierad bergsprängning, vibrationsdämpad stenspräckning och bergborrning för villatomter, grunder och anläggningsprojekt.',
-    heroText: 'Säker bergsprängning och kontrollerad stenspräckning med högsta precision på Orust och i hela Bohuslän.',
-    detailedDescription: `Nordisk Bergmark AB är specialister på säker och varsam bergsprängning, hydraulisk stenspräckning och bergborrning. Vi hjälper privatpersoner, byggföretag och samfälligheter på Orust, i Uddevalla och över hela Bohuslän att forma berget för nya villor, tillbyggnader, garage, pooler eller VA-schakter.
+    slug: 'elinstallation',
+    title: 'Elinstallationer',
+    shortDescription: 'Auktoriserade elinstallationer och elservice för privatpersoner, bostadsrättsföreningar och företag i hela Stockholmsområdet.',
+    heroText: 'Trygga och fackmannamässiga elinstallationer utförda av behöriga elektriker i Stockholm.',
+    detailedDescription: `Söderholms El & VVS erbjuder kompletta och säkra elinstallationer för både renovering och nybyggnation i Stockholm med omnejd. Våra behöriga elektriker har mångårig erfarenhet av allt från modernisering av elcentraler och installation av jordfelsbrytare till belysningsstyrning, laddboxar för elbil och kraftmatning till värmepumpar.
 
-Med professionell maskinpark och godkända sprängmattor utför vi precisionssprängning även i trånga villamiljöer nära intilliggande byggnader. Vid särskilt känsliga lägen använder vi skonsam stenspräckning och bergborrning som minimerar vibrationer och omgivningspåverkan.`,
-    heroImage: '/gallery/gallery-3.jpg',
-    image: '/gallery/gallery-3.jpg',
-    href: '/tjanster#bergsprangning',
-    tag: 'Bergsprängning',
-    badge: 'Säker Sprängning',
-    highlights: [
-      'Kontrollerad bergsprängning med godkända sprängmattor',
-      'Vibrationsdämpad stenspräckning nära fastigheter',
-      'Bergborrning för fundament, stolpar och bergvärme',
-      'Komplett borttransport av sprängsten och bergmassor',
-    ],
-    faq: [
-      {
-        question: 'Kan ni spränga berg nära ett befintligt bostadshus?',
-        answer: 'Ja, vi utför varsam precisionssprängning med tunga sprängmattor och anpassad laddningsmängd. Vid extrem närhet till känsliga konstruktioner använder vi stenspräckning helt utan sprängämnen för maximal säkerhet.',
-      },
-      {
-        question: 'Krävs det besiktning och tillstånd innan sprängning?',
-        answer: 'Vi bistår med nödvändiga tillståndsansökningar och rekommenderar för- och efterbesiktning av närliggande fastigheter enligt gällande säkerhetsföreskrifter.',
-      },
-    ],
-  },
-  {
-    slug: 'markarbete',
-    title: 'Markarbeten',
-    shortDescription: 'Omfattande schakt- och grävarbeten, tomtplanering, grundläggning och anläggning med moderna band- och hjulgrävare.',
-    heroText: 'Professionella markarbeten och tomtplanering från grunden över hela Bohuslän.',
-    detailedDescription: `Vi på Nordisk Bergmark AB utför alla typer av mark- och schaktarbeten på Orust, i Uddevalla och omkringliggande kommuner. Oavsett om du ska förbereda marken för nybyggnation, anlägga ny infart, schakta för husgrund eller terrassera en kuperad tomt har vi rätt grävmaskiner och kompetens.
-
-Vi ser till att markförhållandena optimeras med bärlager, rätt fall och stabil grundläggning som håller mot väder och vind i det bohuslänska kustklimatet.`,
+Vi sätter elsäkerhet och precision i främsta rummet. Oavsett om det handlar om ett mindre serviceuppdrag i en villa eller en omfattande elentreprenad för en fastighetsägare ser vi till att anläggningen uppfyller rådande elsäkerhetskrav och levererar pålitlig drift under många år framöver.`,
     heroImage: '/gallery/gallery-1.jpg',
     image: '/gallery/gallery-1.jpg',
-    href: '/tjanster#markarbete',
-    tag: 'Markarbeten',
-    badge: 'Stabil Grund',
+    href: '/tjanster#elinstallation',
+    tag: 'Elinstallation',
+    badge: 'Auktoriserad El',
     highlights: [
-      'Schaktning och tomtplanering för nybyggnation',
-      'Grundläggning för villor, garage och attefallshus',
-      'Anläggning av vägar, uppfarter och parkeringsytor',
-      'Leverans och utläggning av grus, makadam och matjord',
+      'Byte av elcentraler och säkringsskåp',
+      'Installation av laddboxar för elbil',
+      'Elanslutning av värmepumpar och värmesystem',
+      'Felsökning, elbesiktning och modernisering',
     ],
     faq: [
       {
-        question: 'Hjälper ni till med bortforsling av schaktmassor?',
-        answer: 'Ja, vi samordnar hela kedjan inklusive bortforsling av schaktmassor och leverans av rätt fyllnadsmaterial och bärlager.',
+        question: 'Är era elektriker certifierade och behöriga?',
+        answer: 'Ja, vi är registrerade hos Elsäkerhetsverket och alla våra elinstallationer utförs enligt gällande svenska standarder och säkerhetsföreskrifter.',
       },
       {
-        question: 'Vilka typer av grävmaskiner förfogar ni över?',
-        answer: 'Vår maskinpark omfattar moderna band- och minigrävare anpassade för allt från trånga trädgårdsschakter till omfattande anläggningsprojekt.',
+        question: 'Hjälper ni till med installation av elbilsladdare?',
+        answer: 'Absolut. Vi hjälper dig att välja rätt laddbox, kontrollerar huvudsäkringen och utför en komplett och säker elinstallation med Grön Teknik-avdrag.',
       },
     ],
   },
   {
-    slug: 'dranering',
-    title: 'Dränering',
-    shortDescription: 'Fackmannamässig husdränering, fuktisolering av källargrund och anslutning av dagvatten- och avloppssystem.',
-    heroText: 'Trygg dränering och grundisolering som skyddar din fastighet mot fukt och vatteninträngning.',
-    detailedDescription: `Ett fullgott dräneringssystem är fastighetens viktigaste skydd mot fukt, mögel och vattenskador. Nordisk Bergmark AB utför certifierad husdränering och tilläggsisolering på Orust och i hela Bohuslän.
+    slug: 'vvs-arbeten',
+    title: 'VVS & Rörarbeten',
+    shortDescription: 'Professionella VVS-arbeten, rördragning, badrumsinstallationer och stambyten med långsiktig trygghetsgaranti.',
+    heroText: 'Fackmannamässiga VVS-arbeten och rörinstallationer med högsta precision i Stockholm.',
+    detailedDescription: `VVS-arbeten kräver stor yrkesskicklighet och noggrannhet för att förebygga vattenskador och garantera optimal funktion. På Söderholms El & VVS utför vi alla typer av rörarbeten för villor, flerbostadshus och kommersiella lokaler i Stockholm.
 
-Vi schaktar skonsamt runt husgrunden, lägger nya dräneringsrör, monterar fuktisolerande skivor och säkerställer korrekt avledning av dagvatten och regnvatten bort från fastigheten.`,
-    heroImage: '/service-dranering.webp',
-    image: '/service-dranering.webp',
-    href: '/tjanster#dranering',
-    tag: 'Dränering',
-    badge: 'Fuktskydd',
+Våra certifierade VVS-montörer hjälper dig med allt från rördragning vid köks- och badrumsrenoveringar till byte av ventiler, cirkulationspumpar, varmvattenberedare och anslutning av sanitetsporslin. Vi arbetar uteslutande med beprövade kvalitetsprodukter och godkända rörsystem.`,
+    heroImage: '/gallery/gallery-2.jpg',
+    image: '/gallery/gallery-2.jpg',
+    href: '/tjanster#vvs-arbeten',
+    tag: 'VVS & Rör',
+    badge: 'Säker Vatten',
     highlights: [
-      'Dränering och fuktisolering av källargrund',
-      'Dagvattenledningar, stenkistor och infiltration',
-      'Byte och anslutning av servisledningar för VA',
-      'Återställning av tomt och gräsytor efter schaktning',
+      'Rördragning för värme, vatten och avlopp',
+      'Installation och utbyte av varmvattenberedare',
+      'VVS-arbeten vid badrums- och köksrenovering',
+      'Montering av blandare, wc-stolar och sanitet',
     ],
     faq: [
       {
-        question: 'Hur vet man att det är dags att dränera om grunden?',
-        answer: 'Vanliga tecken är fuktfläckar på källarväggar, unken lukt, färgsläpp eller att det gått mer än 25–30 år sedan förra dräneringen utfördes.',
+        question: 'Arbetar ni enligt branschreglerna Säker Vatten?',
+        answer: 'Ja, våra VVS-montörer följer alltid branschreglerna Säker Vatteninstallation för att säkerställa högsta kvalitet och minimera risken för framtida fuktskador.',
       },
       {
-        question: 'Isolerar ni även källarväggarna vid dränering?',
-        answer: 'Ja, vi rekommenderar alltid utvändig fuktisolering (t.ex. dräneringsskivor) vilket ger både varmare källare och ett permanent fuktskydd.',
+        question: 'Kan ni hjälpa till vid akuta rörläckor eller stopp?',
+        answer: 'Ja, vi bistår med snabb felsökning och åtgärd vid vattenläckage och trasiga ventiler i Storstockholm.',
       },
     ],
   },
   {
-    slug: 'snorojning',
-    title: 'Snöröjning',
-    shortDescription: 'Pålitlig snöröjning, halkbekämpning och sandning under vintern samt maskinell gräsklippning och tomtunderhåll på sommaren.',
-    heroText: 'Pålitlig vinterväghållning och säsongsskötsel för vägar, samfälligheter och företag i Bohuslän.',
-    detailedDescription: `När vintern slår till i Bohuslän ser Nordisk Bergmark AB till att vägar, industritomter, samfällighetsvägar och parkeringsytor hålls säkra och framkomliga. Vi erbjuder snöröjning med plogning, saltning och sandning med beredskap dygnet runt under vintersäsongen.
+    slug: 'varmepumpar',
+    title: 'Thermia Värmepumpar',
+    shortDescription: 'Certifierad försäljning, dimensionering och installation av marknadsledande Thermia bergvärme och luft/vattenvärmepumpar.',
+    heroText: 'Sänk dina uppvärmningskostnader och få perfekt inomhusklimat med Thermia värmepumpar.',
+    detailedDescription: `Som certifierad återförsäljare och installatör av Thermia värmepumpar hjälper Söderholms El & VVS dig att investera i en modern, energieffektiv och driftsäker värmelösning. Thermia ligger i absolut framkant när det gäller svensk värmepumpsteknik med hög verkningsgrad och tyst drift.
 
-Under den varmare delen av året bistår vi även med storskalig gräsklippning, dikesrensning och allmänt markunderhåll för fastigheter och vägsamfälligheter på Orust och i Uddevalla med omnejd.`,
-    heroImage: '/service-snorojning.jpg',
-    image: '/service-snorojning.jpg',
-    href: '/tjanster#snorojning',
-    tag: 'Snöröjning',
-    badge: 'Vinterväghållning',
+Vi tar ett helhetsansvar för hela installationen: från noggrann energiberäkning och dimensionering till rördragning, elanslutning och driftsättning. Oavsett om du väljer bergvärme, jordvärme eller luft/vattenvärmepump ser vi till att anläggningen trimmas in för maximal energibesparing.`,
+    heroImage: '/gallery/gallery-5.jpg',
+    image: '/gallery/gallery-5.jpg',
+    href: '/tjanster#varmepumpar',
+    tag: 'Värmepumpar',
+    badge: 'Thermia Partner',
     highlights: [
-      'Snöplogning av vägar, parkeringar och infarter',
-      'Halkbekämpning och sandning',
-      'Beredskapsavtal för företag och samfälligheter',
-      'Maskinell gräsklippning och markskötsel',
+      'Auktoriserad återförsäljare och installatör av Thermia',
+      'Energieffektiv bergvärme och luft/vattenvärmepumpar',
+      'Komplett totalentreprenad från kalkyl till igångkörning',
+      'Utbyte av gamla värmepannor och direktverkande el',
     ],
     faq: [
       {
-        question: 'Erbjuder ni fasta beredskapsavtal för snöröjning?',
-        answer: 'Ja, vi tecknar säsongsavtal med samfälligheter, BRF:er och företag där vi rycker ut automatiskt vid visst snödjup.',
+        question: 'Hur mycket kan jag spara genom att installera en Thermia värmepump?',
+        answer: 'Beroende på ditt befintliga värmesystem kan en modern Thermia värmepump minska uppvärmningskostnaderna med upp till 80 procent.',
       },
       {
-        question: 'Vilka områden täcker ni med snöröjning?',
-        answer: 'Vi utgår från Orust och erbjuder vinterväghållning och snöröjning i närområdet samt delar av Uddevalla och Tjörn.',
+        question: 'Hjälper ni till med dimensionering och energiberäkning?',
+        answer: 'Ja, vi gör alltid en noggrann kalkyl baserad på fastighetens yta, isolering och hushållets energibehov för att rekommendera optimal värmepump.',
+      },
+    ],
+  },
+  {
+    slug: 'service-underhall',
+    title: 'Service & Underhåll',
+    shortDescription: 'Regelbunden service, driftoptimering och konsultation för värmepumpar och värmeanläggningar som säkerställer lång livslängd.',
+    heroText: 'Regelbunden service och expertkonsultation för maximal prestanda och problemfri drift.',
+    detailedDescription: `En värmepump arbetar året runt och behöver kontinuerlig tillsyn för att bibehålla sin höga verkningsgrad och långa livslängd. Söderholms El & VVS erbjuder professionell service och underhåll av Thermia värmepumpar samt övriga värmeanläggningar i Stockholm.
+
+Vid en servicekontroll går vi igenom köldmediekrets, expansionskärl, cirkulationspumpar, filter och styrinställningar. Genom att upptäcka slitage och felinställningar i tid undviker du onödiga driftstopp och säkerställer att värmepumpen alltid arbetar med optimal energieffektivitet.`,
+    heroImage: '/gallery/gallery-3.jpg',
+    image: '/gallery/gallery-3.jpg',
+    href: '/tjanster#service-underhall',
+    tag: 'Service & Rådgivning',
+    badge: 'Förebyggande Service',
+    highlights: [
+      'Auktoriserad service på Thermia värmepumpar',
+      'Funktionskontroll, filterrengöring och tryckkontroll',
+      'Driftoptimering för lägre elförbrukning',
+      'Rådgivning och konsultation vid uppgradering',
+    ],
+    faq: [
+      {
+        question: 'Hur ofta bör man utföra service på sin värmepump?',
+        answer: 'Vi rekommenderar en professionell genomgång vartannat till vart tredje år för att säkerställa högsta verkningsgrad och förebygga kostsamma reparationer.',
+      },
+      {
+        question: 'Servar ni även äldre modeller av Thermia?',
+        answer: 'Ja, vi har stor erfarenhet av både äldre och nyare Thermia-modeller och tillgång till originalreservdelar för snabb åtgärd.',
       },
     ],
   },

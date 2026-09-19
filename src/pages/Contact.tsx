@@ -13,20 +13,20 @@ const container: React.CSSProperties = {
 
 const faqItems = [
   {
-    question: 'Hur snabbt kan vi få en offert på bergarbeten eller markarbeten?',
-    answer: 'Vi återkopplar vanligtvis inom 24 timmar och bokar gärna in ett kostnadsfritt platsbesök för att bedöma bergvolym, markförhållanden och säkerhetsavstånd.',
+    question: 'Hur snabbt kan vi få en offert på värmepump eller el- och VVS-arbeten?',
+    answer: 'Vi återkopplar vanligtvis inom 24 timmar och bokar gärna in ett kostnadsfritt hembesök för att bedöma förutsättningarna, räkna på energibesparingen och lämna ett fast prisförslag.',
   },
   {
     question: 'Vilka geografiska områden är ni verksamma i?',
-    answer: 'Nordisk Bergmark AB utgår från Orust och utför uppdrag i Uddevalla, Tjörn, Stenungsund, Lysekil och över hela Bohuslän samt närliggande delar av Västra Götaland.',
+    answer: 'Söderholms El & VVS utgår från Stockholm och utför uppdrag i hela Storstockholm, däribland Bromma, Nacka, Täby, Danderyd, Lidingö, Solna, Sollentuna och omgivande kommuner.',
   },
   {
-    question: 'Kan ni spräcka berg nära befintliga hus och grundmurar?',
-    answer: 'Ja, med vibrationsfri hydraulisk stenspräckning eller patronbaserad spräckning kan vi säkert och kontrollerat ta bort berg precis intill husväggar, altaner och vattenledningar utan omgivningsskador.',
+    question: 'Är ni auktoriserade för både el och VVS?',
+    answer: 'Ja, vi innehar auktorisation från Elsäkerhetsverket och våra montörer arbetar enligt branschreglerna för Säker Vatten. Dessutom är vi certifierad återförsäljare och installatör för Thermia värmepumpar.',
   },
   {
-    question: 'Hjälper ni till med tillstånd och besiktning inför sprängning?',
-    answer: 'Ja, vi samordnar allt från polistillstånd och riskanalyser till förbesiktningar och vibrationsmätningar så att hela processen sker tryggt och enligt gällande regelverk.',
+    question: 'Kan jag nyttja ROT-avdraget för arbetet?',
+    answer: 'Självklart! Som privatperson har du rätt till 30% ROT-avdrag på arbetskostnaden vid elinstallationer, rörarbeten och värmepumpsinstallation. Vi administrerar avdraget direkt på din faktura.',
   },
 ];
 
@@ -57,8 +57,8 @@ function blurInput(e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement>) 
 
 export default function Contact() {
   usePageTitle(
-    'Kontakta Nordisk Bergmark AB | Orust & Uddevalla',
-    'Kontakta Nordisk Bergmark AB för bergsprängning, bergborrning, stenspräckning och markarbeten på Orust, i Uddevalla och hela Bohuslän. Ring 072-210 75 82.'
+    'Kontakta Söderholms El & VVS | Stockholm',
+    'Kontakta Söderholms El & VVS för elinstallation, VVS och Thermia värmepumpar i Stockholm. Ring 08-25 30 33 eller skicka en förfrågan online.'
   );
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -78,7 +78,7 @@ export default function Contact() {
         paddingBottom: '70px',
         textAlign: 'center',
       }}>
-        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(15, 23, 42, 0.85) 0%, rgba(15, 23, 42, 0.76) 100%)' }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(15, 23, 42, 0.88) 0%, rgba(15, 23, 42, 0.80) 100%)' }} />
         <div style={{ ...container, position: 'relative', zIndex: 1 }}>
           <div>
             <ScrollReveal animation="blur-in">
@@ -94,7 +94,7 @@ export default function Contact() {
             </ScrollReveal>
             <ScrollReveal animation="fade-up" delay={150}>
               <p style={{ color: 'rgba(255,255,255,0.92)', fontSize: '1.08rem', margin: 0, maxWidth: '620px', marginInline: 'auto', lineHeight: 1.6 }}>
-                Vi återkopplar vanligtvis inom 24 timmar. Kostnadsfri offert och professionell rådgivning ingår alltid.
+                Vi återkopplar vanligtvis inom 24 timmar. Kostnadsfri offert och professionell energirådgivning ingår alltid.
               </p>
             </ScrollReveal>
           </div>
@@ -123,7 +123,7 @@ export default function Contact() {
                 Så når du oss
               </h2>
               <p style={{ color: 'var(--color-gray-600)', fontSize: '1rem', lineHeight: 1.8, margin: 0 }}>
-                Kontakta oss via telefon, e-post eller formuläret. Oavsett om det gäller bergsprängning, bergborrning, stenspräckning, dränering eller tomtplanering hjälper vi er gärna.
+                Kontakta oss via telefon, e-post eller kontaktformuläret. Oavsett om det gäller byte av värmepump, rördragning, elinstallation eller akut service finns vi här för dig.
               </p>
 
               <div style={{ marginTop: '40px', display: 'flex', flexDirection: 'column', gap: '24px' }}>
@@ -147,12 +147,12 @@ export default function Contact() {
                     </p>
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
                       <a
-                        href="tel:0722107582"
+                        href="tel:08253033"
                         style={{ color: 'var(--color-gray-600)', fontSize: '0.95rem', textDecoration: 'none', lineHeight: 1.5, transition: 'color 0.2s ease' }}
                         onMouseEnter={e => (e.currentTarget.style.color = '#0F172A')}
                         onMouseLeave={e => (e.currentTarget.style.color = 'var(--color-gray-600)')}
                       >
-                        072-210 75 82
+                        08-25 30 33
                       </a>
                     </div>
                   </div>
@@ -177,7 +177,7 @@ export default function Contact() {
                       Verksamhetsområde
                     </p>
                     <p style={{ margin: 0, color: 'var(--color-gray-600)', fontSize: '0.95rem', lineHeight: 1.5 }}>
-                      Orust • Uddevalla • Hela Bohuslän
+                      Stockholm • Bromma • Danderyd • Täby • Nacka med omnejd
                     </p>
                   </div>
                 </div>
@@ -201,12 +201,12 @@ export default function Contact() {
                       E-post
                     </p>
                     <a
-                      href="mailto:Nordiskbergmark@gmail.com"
+                      href="mailto:info@soderholms.se"
                       style={{ color: 'var(--color-gray-600)', fontSize: '0.95rem', textDecoration: 'none', lineHeight: 1.5, transition: 'color 0.2s ease' }}
                       onMouseEnter={e => (e.currentTarget.style.color = '#0F172A')}
                       onMouseLeave={e => (e.currentTarget.style.color = 'var(--color-gray-600)')}
                     >
-                      Nordiskbergmark@gmail.com
+                      info@soderholms.se
                     </a>
                   </div>
                 </div>
@@ -230,7 +230,7 @@ export default function Contact() {
                       Företagsuppgifter
                     </p>
                     <p style={{ margin: 0, color: 'var(--color-gray-600)', fontSize: '0.95rem', lineHeight: 1.5 }}>
-                      Nordisk Bergmark AB • Org.nr: 559547-7760 • Godkänd för F-skatt
+                      Söderholms El & VVS • Org.nr: 556041-3055 • Godkänd för F-skatt
                     </p>
                   </div>
                 </div>
@@ -277,7 +277,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: 600, color: 'var(--color-text-dark)', marginBottom: '6px' }}>
-                        Företag / BRF / Kommun (valfritt)
+                        Företag / BRF (valfritt)
                       </label>
                       <input
                         type="text"
@@ -296,7 +296,7 @@ export default function Contact() {
                       </label>
                       <input
                         type="email"
-                        placeholder="din.epost@foretag.se"
+                        placeholder="din.epost@adress.se"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         required
@@ -311,7 +311,7 @@ export default function Contact() {
                       </label>
                       <input
                         type="tel"
-                        placeholder="070-123 45 67"
+                        placeholder="08-000 00 00"
                         value={phone}
                         onChange={(e) => setPhone(e.target.value)}
                         required
@@ -324,11 +324,11 @@ export default function Contact() {
 
                   <div>
                     <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: 600, color: 'var(--color-text-dark)', marginBottom: '6px' }}>
-                      Plats / Ort för projektet
+                      Område / Kommun i Stockholm
                     </label>
                     <input
                       type="text"
-                      placeholder="Ort eller kommun"
+                      placeholder="T.ex. Bromma, Täby, Nacka, Danderyd"
                       style={inputStyle}
                       onFocus={focusInput}
                       onBlur={blurInput}
@@ -337,11 +337,11 @@ export default function Contact() {
 
                   <div>
                     <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: 600, color: 'var(--color-text-dark)', marginBottom: '6px' }}>
-                      Beskriv ert projekt eller behov
+                      Beskriv ert ärende eller önskemål
                     </label>
                     <textarea
                       rows={4}
-                      placeholder="Berätta om ert projekt, bergvolym, tomtförutsättningar samt önskad tidsplan..."
+                      placeholder="Berätta om din fastighet, befintligt värmesystem, elbehov samt önskad tidsplan..."
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}
                       required
@@ -388,27 +388,50 @@ export default function Contact() {
       {/* ── SECTION C: FAQ ─────────────────────────────────────── */}
       <section style={{ background: '#ffffff', padding: '80px 0', borderTop: '1px solid #e2e8f0' }}>
         <div style={container}>
-          <FAQAccordion
-            items={faqItems}
-            title="Vanliga frågor om våra tjänster"
-            subtitle="Här har vi samlat svar på återkommande frågor kring offerter, etablering och spräng- och markarbeten."
-            dark={false}
-          />
+          <div style={{ textAlign: 'center', maxWidth: '640px', margin: '0 auto 50px auto' }}>
+            <ScrollReveal animation="blur-in">
+              <span style={{
+                color: '#0f172a',
+                fontWeight: 700,
+                fontSize: '0.8rem',
+                letterSpacing: '0.08em',
+                textTransform: 'uppercase',
+                display: 'inline-block',
+                marginBottom: '10px',
+                background: '#e2e8f0',
+                padding: '4px 14px',
+                borderRadius: '999px',
+              }}>
+                Vanliga frågor
+              </span>
+              <h2 style={{
+                color: 'var(--color-text-dark)',
+                fontWeight: 700,
+                fontSize: 'clamp(1.8rem, 3.2vw, 2.4rem)',
+                margin: 0,
+                lineHeight: 1.2,
+              }}>
+                Frågor inför din kontakt
+              </h2>
+            </ScrollReveal>
+          </div>
+          <div style={{ maxWidth: '820px', margin: '0 auto' }}>
+            <FAQAccordion items={faqItems} />
+          </div>
         </div>
       </section>
 
-      {/* ── SECTION D: CTA ────────────────────────────────────────── */}
+      {/* ── SECTION D: CTA ─────────────────────────────────────── */}
       <CTABanner />
 
       <style>{`
-        @media (max-width: 900px) {
+        @media (max-width: 860px) {
           .contact-grid {
             grid-template-columns: 1fr !important;
             gap: 40px !important;
           }
           .contact-form-row {
             grid-template-columns: 1fr !important;
-            gap: 0 !important;
           }
         }
       `}</style>

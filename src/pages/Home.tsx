@@ -27,57 +27,57 @@ const container: React.CSSProperties = {
 const homeFaqItems = [
   {
     question: 'Kostar det något att få en offert?',
-    answer: 'Nej, vi erbjuder alltid kostnadsfria offerter och teknisk rådgivning helt utan förbindelser för alla typer av bergarbeten och markentreprenader.',
+    answer: 'Nej, vi erbjuder alltid kostnadsfri rådgivning och offert för alla typer av el-, VVS- och värmepumpsinstallationer.',
   },
   {
     question: 'Vilket geografiskt område jobbar ni i?',
-    answer: 'Nordisk Bergmark AB utgår från Orust men utför arbeten i Uddevalla, Tjörn, Stenungsund, Lysekil och över hela Bohuslän samt närliggande delar av Västra Götaland.',
+    answer: 'Söderholms El & VVS utgår från Stockholm och utför arbeten i Bromma, Nacka, Täby, Danderyd, Lidingö, Solna och hela Storstockholm med omnejd.',
   },
   {
-    question: 'Vad är skillnaden mellan bergsprängning och stenspräckning?',
-    answer: 'Bergsprängning används vid större bergvolymer och tomtschaktning med täckning av tunga sprängmattor. Stenspräckning (hydraulisk eller patronbaserad) är en skonsam, vibrationsfri metod som lämpar sig optimalt tätt intill befintliga husgrunder, ledningar och känslig bebyggelse.',
+    question: 'Hur fungerar installationen av en Thermia värmepump?',
+    answer: 'Vi erbjuder komplett totalentreprenad från noggrann dimensionering och energiberäkning till rördragning, elanslutning, driftsättning och intrimning av din Thermia värmepump.',
   },
   {
-    question: 'Hjälper ni till med besiktning och tillstånd vid bergsprängning?',
-    answer: 'Ja, vi samordnar nödvändiga tillstånd, riskanalyser, förbesiktning av närliggande fastigheter och vibrationsmätning så att hela entreprenaden sker tryggt och enligt gällande regelverk.',
+    question: 'Kan privatpersoner nyttja ROT-avdrag och Grön Teknik?',
+    answer: 'Ja, vid installation av värmepumpar och VVS-arbeten nyttjar du ROT-avdraget med 30 procent skattereduktion på arbetskostnaden. Vid laddboxinstallation gäller Grön Teknik med 50 procents avdrag. Vi drar av beloppet direkt på fakturan.',
   },
   {
-    question: 'Erbjuder ni även dränering, grävning och snöröjning?',
-    answer: 'Absolut. Utöver bergsprängning och bergborrning utför vi kompletta markarbeten som husgrunder, tomtplanering, schakt och dränering, samt snöröjning under vintern.',
+    question: 'Erbjuder ni även service och akut felsökning?',
+    answer: 'Ja, vi utför kontinuerlig service, underhåll och driftoptimering av värmepumpar samt snabb felsökning och åtgärd vid el- och rörproblem.',
   },
 ];
 
 const homeReviews = [
   {
     name: 'Johan E.',
-    location: 'Orust',
-    authorSub: 'Orust, Bohuslän',
-    text: 'Anlitade Nordisk Bergmark för bergsprängning och schaktning inför vårt husbygge på Orust. Otroligt professionellt genomfört med full koll på besiktning och vibrationer mot grannfastigheterna. Rekommenderas varmt!',
+    location: 'Bromma',
+    authorSub: 'Bromma, Stockholm',
+    text: 'Vi anlitade Söderholms El & VVS för att installera en Thermia bergvärmepump i vår villa i Bromma. Otroligt proffsigt bemötande från första kalkyl till driftsatt system. Snygg och prydlig rördragning och elinstallation i källaren. Uppvärmningen fungerar klockrent och driftkostnaderna har minskat rejält.',
+    stars: 5,
+    date: '3 veckor sedan',
+  },
+  {
+    name: 'Karin M.',
+    location: 'Danderyd',
+    authorSub: 'Danderyd, Stockholm',
+    text: 'Anlitade Söderholms för både elinstallation och rörarbeten i samband med badrumsrenovering samt installation av elbilsladdare. Mycket kunniga, punktliga och noggranna hantverkare som höll rent och snyggt under hela arbetet. Rekommenderas varmt!',
     stars: 5,
     date: '1 månad sedan',
   },
   {
-    name: 'Karin M.',
-    location: 'Uddevalla',
-    authorSub: 'Uddevalla, Bohuslän',
-    text: 'Fick hjälp med dränering runt källaren och stenspräckning av bergsklackar på tomten. Arbetet utfördes snabbt, noggrant och tomten lämnades i toppskick. Mycket trevligt och pålitligt bemötande genom hela projektet.',
+    name: 'Markus L.',
+    location: 'Nacka',
+    authorSub: 'Nacka, Stockholm',
+    text: 'Suverän service och rådgivning när vår äldre värmepump behövde ses över. Teknikern gjorde en grundlig genomgång, bytte slitdelar och optimerade inställningarna. Tryggt med ett företag som har funnits sedan 1942 och verkligen kan sin sak.',
     stars: 5,
     date: '2 månader sedan',
-  },
-  {
-    name: 'Markus L.',
-    location: 'Tjörn',
-    authorSub: 'Tjörn, Bohuslän',
-    text: 'Grymt duktiga och pålitliga hantverkare! De borrade och spräckte bort berget intill vår befintliga altan helt utan skador på omgivningen. Punktliga, moderna maskiner och ett riktigt snyggt slutresultat.',
-    stars: 5,
-    date: '3 veckor sedan',
   },
 ];
 
 export default function Home() {
   usePageTitle(
-    'Nordisk Bergmark AB | Bergsprängning & Markarbeten i Bohuslän',
-    'Nordisk Bergmark AB utför professionell bergsprängning, bergborrning, stenspräckning, dränering och markarbeten på Orust, i Uddevalla och hela Bohuslän. Fri offert!'
+    'Söderholms El & VVS | El, VVS & Värmepumpar i Stockholm',
+    'Söderholms El & VVS erbjuder auktoriserade elinstallationer, VVS och certifierad installation av Thermia värmepumpar i Stockholm med omnejd. Kontakta oss för fri offert!'
   );
 
   const heroBgRef = useRef<HTMLDivElement>(null);
@@ -115,43 +115,49 @@ export default function Home() {
         paddingTop: 'clamp(85px, 10vh, 110px)',
         paddingBottom: 'clamp(40px, 6vh, 60px)',
         boxSizing: 'border-box',
+        background: '#0B1120',
       }}>
-        {/* Hero Background Video */}
+        {/* Hero Background */}
         <div
           ref={heroBgRef}
           style={{
             position: 'absolute',
-            inset: 0,
+            top: '-10%',
+            left: 0,
+            right: 0,
+            height: '120%',
             zIndex: 0,
             overflow: 'hidden',
+            backgroundColor: '#0B1120',
           }}
         >
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="auto"
-            style={{
-              width: '100%',
-              height: '100%',
-              objectFit: 'cover',
-              objectPosition: 'center',
-            }}
-          >
-            <source
-              src={images.hero.videoUrl}
-              type="video/mp4"
-            />
-            <source src="/hero-video.mp4" type="video/mp4" />
-          </video>
+          {images.hero.videoUrl ? (
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="auto"
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+                objectPosition: 'center',
+              }}
+            >
+              <source
+                src={images.hero.videoUrl}
+                type="video/mp4"
+              />
+            </video>
+          ) : null}
         </div>
 
         {/* Balanced subtle gradient overlay */}
         <div style={{
           position: 'absolute',
           inset: 0,
-          background: 'linear-gradient(180deg, rgba(15, 23, 42, 0.48) 0%, rgba(15, 23, 42, 0.26) 45%, rgba(15, 23, 42, 0.52) 100%)',
+          background: 'linear-gradient(180deg, rgba(15, 23, 42, 0.58) 0%, rgba(15, 23, 42, 0.45) 45%, rgba(15, 23, 42, 0.66) 100%)',
           zIndex: 1,
           pointerEvents: 'none',
         }} />
@@ -175,27 +181,27 @@ export default function Home() {
                 justifyContent: 'center',
                 position: 'relative',
               }}>
-                {/* Ambient glow behind logo */}
+                {/* Deep contrast radial backing & warm halo to make gold pop cleanly over daytime video */}
                 <div style={{
                   position: 'absolute',
                   top: '50%',
                   left: '50%',
                   transform: 'translate(-50%, -50%)',
-                  width: 'clamp(200px, 28vw, 300px)',
-                  height: 'clamp(200px, 28vw, 300px)',
-                  background: 'radial-gradient(circle, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.03) 45%, transparent 70%)',
+                  width: 'clamp(260px, 34vw, 380px)',
+                  height: 'clamp(260px, 34vw, 380px)',
+                  background: 'radial-gradient(circle, rgba(10, 15, 26, 0.78) 0%, rgba(10, 15, 26, 0.50) 48%, rgba(245, 158, 11, 0.12) 64%, transparent 78%)',
                   borderRadius: '50%',
                   pointerEvents: 'none',
-                  filter: 'blur(30px)',
+                  filter: 'blur(16px)',
                 }} />
                 <img
                   src={images.logo.url}
                   alt={images.logo.alt}
                   style={{
-                    width: 'clamp(160px, 18vw, 220px)',
+                    width: 'clamp(200px, 24vw, 290px)',
                     height: 'auto',
                     display: 'block',
-                    filter: 'drop-shadow(0 10px 36px rgba(0, 0, 0, 0.9)) drop-shadow(0 4px 12px rgba(0, 0, 0, 0.7))',
+                    filter: 'brightness(1.18) contrast(1.14) saturate(1.24) drop-shadow(0 0 2px rgba(0, 0, 0, 0.98)) drop-shadow(0 8px 24px rgba(0, 0, 0, 0.85)) drop-shadow(0 0 26px rgba(245, 178, 48, 0.38))',
                     position: 'relative',
                     zIndex: 1,
                   }}
@@ -227,7 +233,7 @@ export default function Home() {
                 margin: '0 0 12px 0',
                 textShadow: '0 4px 24px rgba(0, 0, 0, 0.85)',
               }}>
-                Bergsprängning & Markarbeten i Bohuslän
+                El, VVS & Thermia Värmepumpar i Stockholm
               </h1>
             </ScrollReveal>
 
@@ -235,7 +241,7 @@ export default function Home() {
             <ScrollReveal animation="fade-up" delay={280} duration={0.8}>
               <p style={{
                 fontFamily: "var(--font-body)",
-                color: 'rgba(255, 255, 255, 0.85)',
+                color: 'rgba(255, 255, 255, 0.92)',
                 fontSize: 'clamp(0.92rem, 1.1vw, 1.05rem)',
                 lineHeight: 1.6,
                 maxWidth: '580px',
@@ -244,12 +250,12 @@ export default function Home() {
                 fontWeight: 400,
                 letterSpacing: '0.01em',
               }}>
-                Vi utgår från Orust och utför bergborrning, stenspräckning, bergsprängning, schaktning och dränering i Uddevalla och över hela Bohuslän.
+                Auktoriserade elinstallationer, fackmannamässig VVS och certifierad installation av Thermia värmepumpar i Stockholm sedan 1942.
               </p>
             </ScrollReveal>
 
             {/* ── Action Buttons ── */}
-            <ScrollReveal animation="fade-up" delay={450} duration={0.8}>
+            <ScrollReveal animation="fade-up" delay={360} duration={0.8}>
               <div style={{
                 display: 'flex',
                 alignItems: 'center',
@@ -269,7 +275,7 @@ export default function Home() {
                 <Button
                   variant="outline"
                   size="lg"
-                  href="tel:0722107582"
+                  href="tel:08253033"
                   onClick={(e) => {
                     if (window.innerWidth > 768) {
                       e.preventDefault();
@@ -279,7 +285,7 @@ export default function Home() {
                 >
                   <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
                     <Phone size={16} />
-                    072-210 75 82
+                    08-25 30 33
                   </span>
                 </Button>
               </div>
@@ -316,16 +322,13 @@ export default function Home() {
             <div style={{ maxWidth: '580px' }}>
               <ScrollReveal animation="fade-right">
                 <span style={{
-                  color: '#0f172a',
+                  color: 'var(--color-primary-orange)',
                   fontWeight: 700,
-                  fontSize: '0.8rem',
+                  fontSize: '0.85rem',
                   letterSpacing: '0.08em',
                   textTransform: 'uppercase',
                   display: 'inline-block',
                   marginBottom: '10px',
-                  background: '#e2e8f0',
-                  padding: '4px 14px',
-                  borderRadius: '999px',
                 }}>
                   Vad vi erbjuder
                 </span>
@@ -336,7 +339,7 @@ export default function Home() {
                   margin: 0,
                   lineHeight: 1.18,
                 }}>
-                  Mark- och bergarbeten med högsta precision
+                  Auktoriserad el och VVS med högsta precision
                 </h2>
               </ScrollReveal>
             </div>
@@ -349,7 +352,7 @@ export default function Home() {
                   lineHeight: 1.65,
                   margin: '0 0 12px 0',
                 }}>
-                  Från bergsprängning och stenspräckning till schaktning, dränering och snöröjning på Orust och i hela Bohuslän.
+                  Från säkra elinstallationer och stambyten till certifierad installation och service av Thermia värmepumpar i Stockholm med omnejd.
                 </p>
                 <Link
                   to="/tjanster"
@@ -411,7 +414,84 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── SECTION 3: DIN PARTNER INOM BERG & MARK / OM OSS ─────── */}
+      {/* ── SECTION 2.5: THERMIA AUKTORISERAD PARTNER ─────────── */}
+      <section style={{
+        background: '#ffffff',
+        padding: 'clamp(64px, 8vw, 96px) 0',
+        borderTop: '1px solid #e2e8f0',
+        borderBottom: '1px solid #e2e8f0',
+      }}>
+        <div style={container}>
+          <div className="thermia-section-grid" style={{
+            display: 'grid',
+            gridTemplateColumns: 'clamp(200px, 30%, 300px) 1fr',
+            gap: 'clamp(36px, 6vw, 68px)',
+            alignItems: 'center',
+            maxWidth: '920px',
+            margin: '0 auto',
+          }}>
+            {/* Left: Thermia Official Emblem */}
+            <ScrollReveal animation="fade-right" duration={0.6}>
+              <div style={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                padding: '24px',
+                background: '#f8fafc',
+                borderRadius: '16px',
+                border: '1px solid #e2e8f0',
+              }}>
+                <img
+                  src="/thermia-badge.png"
+                  alt="Thermia Värmepumpar"
+                  style={{
+                    width: '100%',
+                    maxWidth: '240px',
+                    height: 'auto',
+                    objectFit: 'contain',
+                    display: 'block',
+                  }}
+                />
+              </div>
+            </ScrollReveal>
+
+            {/* Right: Clean, Natural Craftsmanship Info */}
+            <ScrollReveal animation="fade-left" duration={0.6} delay={100}>
+              <div>
+                <h2 style={{
+                  color: 'var(--color-text-dark)',
+                  fontFamily: 'var(--font-heading)',
+                  fontSize: 'clamp(1.8rem, 3vw, 2.3rem)',
+                  fontWeight: 700,
+                  lineHeight: 1.25,
+                  margin: '0 0 16px 0',
+                }}>
+                  Auktoriserad återförsäljare av Thermia
+                </h2>
+                <p style={{
+                  color: 'var(--color-gray-600)',
+                  fontSize: '1.05rem',
+                  lineHeight: 1.75,
+                  margin: '0 0 26px 0',
+                  maxWidth: '540px',
+                }}>
+                  Söderholms El &amp; VVS levererar, installerar och servar Thermias energieffektiva bergvärme- och luft/vattenvärmepumpar i hela Stockholm. Vi hjälper dig hela vägen från dimensionering och energiberäkning till färdig installation och framtida service.
+                </p>
+                <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap' }}>
+                  <Button variant="dark" href="/kontakt">
+                    Kontakta oss för rådgivning
+                  </Button>
+                  <Button variant="outline" href="/offert">
+                    Begär offert
+                  </Button>
+                </div>
+              </div>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
+      {/* ── SECTION 3: OM OSS / ER TRYGGA PARTNER ─────── */}
       <section style={{ background: '#ffffff', padding: 'clamp(60px, 8vw, 100px) 0', borderTop: '1px solid #e2e8f0' }}>
         <div style={container}>
           <div className="two-col" style={{
@@ -440,7 +520,7 @@ export default function Home() {
               }}>
                 <img
                   src={images.about.hero.url}
-                  alt="Nordisk Bergmark AB verksamhet och maskinpark"
+                  alt="Söderholms El & VVS certifierade installatörer och montörer"
                   style={{
                     width: '100%',
                     height: '100%',
@@ -462,7 +542,7 @@ export default function Home() {
                   lineHeight: 1.2,
                   margin: '0 0 14px 0',
                 }}>
-                  Er trygga partner för berg och mark i Bohuslän
+                  Er trygga partner för el och VVS i Stockholm sedan 1942
                 </h2>
               </ScrollReveal>
               <ScrollReveal animation="scale-x-left" delay={200} duration={0.6}>
@@ -475,16 +555,16 @@ export default function Home() {
                   lineHeight: 1.75,
                   margin: '0 0 32px 0',
                 }}>
-                  Nordisk Bergmark AB är experter på bergsprängning, bergborrning, stenspräckning och markarbeten. Med bas på Orust verkar vi över hela Bohuslän och hjälper privatpersoner, byggföretag och fastighetsägare med allt från tomtplanering och bergschakt till husgrunder, dränering och snöröjning. Med modern maskinpark och högsta säkerhetsfokus levererar vi hållbara lösningar anpassade efter varje markförhållande.
+                  Söderholms El & VVS grundades 1942 och har i över 80 år levererat pålitliga hantverkstjänster med högsta kvalitet och säkerhet. Vi hjälper privatpersoner, bostadsrättsföreningar och fastighetsägare i Stockholm med allt från auktoriserade elinstallationer och rörarbeten till certifierad försäljning, dimensionering och service av Thermia värmepumpar. Med fokus på gediget hantverk, energieffektivitet och personlig service ser vi till att dina installationer fungerar felfritt år efter år.
                 </p>
               </ScrollReveal>
               <ScrollReveal animation="fade-right" duration={0.8} delay={200}>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                   {[
-                    'Säker bergsprängning och vibrationsfri stenspräckning',
-                    'Moderna borriggar och grävmaskiner för alla markförhållanden',
-                    'Lokal närvaro på Orust, i Uddevalla och över hela Bohuslän',
-                    'Kompletta helhetslösningar från bergschakt till färdig tomt',
+                    'Auktoriserad elinstallatör och certifierad VVS',
+                    'Certifierad återförsäljare och installatör av Thermia värmepumpar',
+                    'Lokal närvaro i Stockholm, Bromma, Nacka, Täby och Danderyd',
+                    'Komplett totalentreprenad från rådgivning till driftsättning',
                   ].map((item, i) => (
                     <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                       <CheckCircle2 size={22} color="#0F172A" style={{ flexShrink: 0 }} />
@@ -520,7 +600,7 @@ export default function Home() {
         <div style={{
           position: 'absolute',
           inset: 0,
-          backgroundImage: `url(/cta-mid-section.webp)`,
+          backgroundImage: `url(/gallery/gallery-5.jpg)`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }} />
@@ -533,15 +613,15 @@ export default function Home() {
               fontSize: 'clamp(1.8rem, 3vw, 2.6rem)',
               margin: '0 0 12px 0',
             }}>
-              Behöver ni bergsprängning eller markarbeten?
+              Planerar ni att byta värmepump eller utföra el- och VVS-arbeten?
             </h2>
             <p style={{
-              color: 'rgba(255,255,255,0.7)',
+              color: 'rgba(255,255,255,0.8)',
               fontSize: '1rem',
               margin: '0 0 32px 0',
               lineHeight: 1.7,
             }}>
-              Vi återkopplar med kostnadsfri offert och rådgivning inför ert projekt på Orust, i Uddevalla eller övriga Bohuslän.
+              Vi återkopplar med kostnadsfri rådgivning och offert inför ert projekt i Stockholm med omnejd.
             </p>
             <Button variant="white" size="lg" href="/offert">
               Begär offert
@@ -563,16 +643,13 @@ export default function Home() {
           <ScrollReveal animation="fade-up">
             <div style={{ textAlign: 'center', marginBottom: '48px' }}>
               <span style={{
-                color: '#0f172a',
+                color: 'var(--color-primary-orange)',
                 fontWeight: 700,
-                fontSize: '0.8rem',
+                fontSize: '0.85rem',
                 letterSpacing: '0.08em',
                 textTransform: 'uppercase',
                 display: 'inline-block',
                 marginBottom: '10px',
-                background: '#e2e8f0',
-                padding: '4px 14px',
-                borderRadius: '999px',
               }}>
                 Kundomdömen
               </span>
@@ -592,7 +669,7 @@ export default function Home() {
                 margin: '0 auto',
                 lineHeight: 1.6,
               }}>
-                Nöjda kunder i Orust, Uddevalla och övriga Bohuslän är vårt bästa kvitto på noggrant utförda mark- och bergarbeten.
+                Nöjda villaägare och bostadsrättsföreningar i Stockholm är vårt bästa kvitto på noggrant utförda el- och VVS-arbeten.
               </p>
             </div>
           </ScrollReveal>
@@ -616,7 +693,6 @@ export default function Home() {
         </div>
       </section>
 
-
       {/* ── SECTION 8: VANLIGA FRÅGOR (FAQ) ── */}
       <section style={{
         background: '#0f172a',
@@ -635,7 +711,7 @@ export default function Home() {
           <FAQAccordion
             items={homeFaqItems}
             title="Vanliga frågor"
-            subtitle="Här hittar du svar på vanliga funderingar kring bergsprängning, stenspräckning, markarbeten och hur vi arbetar över hela Bohuslän."
+            subtitle="Här hittar du svar på vanliga funderingar kring elinstallationer, VVS, Thermia värmepumpar och ROT-avdrag i Stockholm."
             buttonText="Kontakta oss direkt"
             buttonLink="/kontakt"
             dark={true}
@@ -677,6 +753,18 @@ export default function Home() {
         @media (max-width: 768px) {
           .two-col { grid-template-columns: 1fr !important; gap: 32px !important; }
           .reviews-grid { grid-template-columns: 1fr !important; gap: 20px !important; }
+          .thermia-section-grid {
+            grid-template-columns: 1fr !important;
+            text-align: center;
+            gap: 28px !important;
+          }
+          .thermia-section-grid img {
+            margin: 0 auto;
+            max-width: 190px !important;
+          }
+          .thermia-section-grid div:last-child div {
+            justify-content: center;
+          }
         }
       `}</style>
     </main>

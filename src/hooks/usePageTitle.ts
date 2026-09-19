@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-const LOGO_ABSOLUTE_URL = 'https://raw.githubusercontent.com/filipmrbg/Nordisk-Bergmark-Ny/main/public/og-image.png';
+const LOGO_ABSOLUTE_URL = 'https://raw.githubusercontent.com/filipmrbg/S-derholms-El-VVS-demo/main/public/og-image.png';
 
 export function usePageTitle(title: string, description?: string) {
   const { pathname } = useLocation();
@@ -11,7 +11,7 @@ export function usePageTitle(title: string, description?: string) {
     document.title = title;
 
     // 2. Update Description
-    const defaultDesc = "Nordisk Bergmark AB utför professionell bergsprängning, stenspräckning, bergborrning, grävning och dränering på Orust, i Uddevalla och över hela Bohuslän. Kontakta oss för fri offert!";
+    const defaultDesc = "Söderholms El & VVS erbjuder auktoriserade elinstallationer, professionell VVS och certifierad installation av Thermia värmepumpar i Stockholm med omnejd. Kontakta oss för fri offert!";
     const activeDesc = description || defaultDesc;
     
     let metaDescription = document.querySelector('meta[name="description"]');
@@ -41,7 +41,7 @@ export function usePageTitle(title: string, description?: string) {
     // 5. Update Canonical Link & Absolute URL
     const origin = typeof window !== 'undefined' && window.location.origin.startsWith('http')
       ? window.location.origin
-      : 'https://nordiskbergmark.se';
+      : 'https://soderholms.se';
     const absoluteUrl = `${origin}${pathname === '/' ? '' : pathname}`;
     const absoluteOgImage = LOGO_ABSOLUTE_URL;
 

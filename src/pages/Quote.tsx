@@ -14,15 +14,15 @@ const container: React.CSSProperties = {
 const faqItems = [
   {
     question: 'Kostar offerten något?',
-    answer: 'Nej, offert och rådgivning är alltid helt kostnadsfritt. Vi går igenom era ritningar, ytor och förutsättningar och tar fram ett tydligt prisförslag helt utan förbindelser.',
+    answer: 'Nej, offert och rådgivning är alltid helt kostnadsfritt. Vi går igenom era förutsättningar, gör hembesök vid behov och tar fram ett tydligt, specificerat prisförslag utan förbindelser.',
   },
   {
-    question: 'Hur snabbt kan ni påbörja bergarbetet eller markarbetet?',
-    answer: 'Det beror på projektets omfattning och eventuella tillstånd eller besiktningar. Vi har stor flexibilitet och egen maskinpark på Orust, vilket gör att vi kan etablera oss snabbt över hela Bohuslän.',
+    question: 'Hur snabbt kan ni påbörja installationen?',
+    answer: 'Mindre el- och VVS-arbeten kan vi ofta påbörja med kort varsel. För kompletta värmepumpsbyten planerar vi in leverans och installation smidigt efter era önskemål och förutsättningar.',
   },
   {
     question: 'Utför ni arbeten åt både privatpersoner och företag?',
-    answer: 'Ja! Vi hjälper privatpersoner, villaägare, lantbrukare, byggentreprenörer och samfälligheter på Orust, i Uddevalla och övriga Bohuslän.',
+    answer: 'Ja! Vi hjälper villaägare, bostadsrättsföreningar, fastighetsägare och företag i hela Stockholm med omnejd.',
   },
 ];
 
@@ -53,8 +53,8 @@ function blurInput(e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement | 
 
 export default function Quote() {
   usePageTitle(
-    'Begär offert | Nordisk Bergmark AB',
-    'Beskriv ert projekt och begär en kostnadsfri offert för bergsprängning, stenspräckning, markarbeten, dränering eller snöröjning på Orust och i Bohuslän.'
+    'Begär offert | Söderholms El & VVS',
+    'Beskriv ert projekt och begär en kostnadsfri offert för Thermia värmepump, elinstallation eller VVS-arbeten i Stockholm.'
   );
   const [name, setName]       = useState('');
   const [email, setEmail]     = useState('');
@@ -75,7 +75,7 @@ export default function Quote() {
         paddingBottom: '60px',
         textAlign: 'center',
       }}>
-        <div style={{ position: 'absolute', inset: 0, background: 'rgba(15, 23, 42, 0.78)' }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'rgba(15, 23, 42, 0.82)' }} />
         <div style={{ ...container, position: 'relative', zIndex: 1 }}>
           <div>
             <ScrollReveal animation="blur-in">
@@ -100,7 +100,7 @@ export default function Quote() {
                 margin: '20px auto 0',
                 lineHeight: 1.6,
               }}>
-                Fyll i formuläret nedan och beskriv vad ni behöver hjälp med så återkommer vi med en specificerad offert inom 24 timmar.
+                Fyll i formuläret nedan och beskriv vad ni behöver hjälp med så återkommer vi med en specificerad offert och rådgivning inom 24 timmar.
               </p>
             </ScrollReveal>
           </div>
@@ -132,10 +132,10 @@ export default function Quote() {
                   fontSize: 'clamp(1.4rem, 2.2vw, 1.8rem)',
                   margin: '0 0 8px 0',
                 }}>
-                  Beskriv ert markeringsprojekt
+                  Beskriv ditt projekt eller behov
                 </h2>
                 <p style={{ color: 'var(--color-gray-600)', fontSize: '0.92rem', margin: '0 0 28px 0', lineHeight: 1.6 }}>
-                  Vi återkopplar vanligtvis samma eller nästkommande arbetsdag.
+                  Vi återkopplar vanligtvis samma eller nästkommande arbetsdag med rådgivning och prisförslag.
                 </p>
 
                 <form onSubmit={(e) => { e.preventDefault(); alert('Tack för din förfrågan! Vi kontaktar dig inom 24 timmar.'); }}>
@@ -163,7 +163,7 @@ export default function Quote() {
                       <input
                         type="tel"
                         required
-                        placeholder="070-000 00 00"
+                        placeholder="08-000 00 00"
                         value={phone}
                         onChange={(e) => setPhone(e.target.value)}
                         style={inputStyle}
@@ -180,7 +180,7 @@ export default function Quote() {
                     <input
                       type="email"
                       required
-                      placeholder="din.epost@foretag.se"
+                      placeholder="din.epost@adress.se"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       style={inputStyle}
@@ -202,12 +202,12 @@ export default function Quote() {
                       onBlur={blurInput}
                     >
                       <option value="">Välj tjänst...</option>
-                      <option value="bergsprangning">Bergsprängning</option>
-                      <option value="markarbete">Markarbeten</option>
-                      <option value="dranering">Dränering</option>
-                      <option value="snorojning">Snöröjning</option>
-                      <option value="stensprackning">Stenspräckning</option>
-                      <option value="annat">Annat mark- eller bergarbete</option>
+                      <option value="varmepumpar">Installation av Thermia Värmepump</option>
+                      <option value="service-underhall">Service & Underhåll av Värmepump</option>
+                      <option value="elinstallation">Elinstallationer & Belysning</option>
+                      <option value="vvs-arbeten">VVS & Rörarbeten</option>
+                      <option value="radgivning">Rådgivning & Energikonsultation</option>
+                      <option value="annat">Övriga installationsarbeten</option>
                     </select>
                   </div>
 
@@ -218,7 +218,7 @@ export default function Quote() {
                     <textarea
                       required
                       rows={5}
-                      placeholder="Berätta om tomtens förutsättningar, bergvolym, adress/ort samt önskad tidsram..."
+                      placeholder="Berätta om fastigheten, nuvarande värmesystem, önskat arbete, område i Stockholm samt önskad tidsram..."
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}
                       style={{ ...inputStyle, resize: 'vertical' }}
@@ -238,22 +238,22 @@ export default function Quote() {
                       fontSize: '1rem',
                       fontWeight: 700,
                       cursor: 'pointer',
-                      width: '100%',
-                      fontFamily: 'var(--font-family)',
-                      boxShadow: '0 4px 16px rgba(15, 23, 42, 0.2)',
-                      transition: 'all 0.3s ease',
-                      display: 'flex',
+                      display: 'inline-flex',
                       alignItems: 'center',
+                      gap: '10px',
+                      width: '100%',
                       justifyContent: 'center',
-                      gap: '8px',
+                      boxShadow: '0 4px 16px rgba(15, 23, 42, 0.2)',
+                      transition: 'all 0.25s ease',
+                      fontFamily: 'var(--font-family)',
                     }}
-                    onMouseEnter={e => {
+                    onMouseEnter={(e) => {
                       e.currentTarget.style.background = '#1E293B';
                       e.currentTarget.style.transform = 'translateY(-2px)';
                     }}
-                    onMouseLeave={e => {
+                    onMouseLeave={(e) => {
                       e.currentTarget.style.background = '#0F172A';
-                      e.currentTarget.style.transform = 'translateY(0)';
+                      e.currentTarget.style.transform = 'none';
                     }}
                   >
                     <Send size={18} />
@@ -263,76 +263,104 @@ export default function Quote() {
               </div>
             </ScrollReveal>
 
-            {/* Right: Trust Points */}
+            {/* Right: Trust Cards */}
             <ScrollReveal animation="fade-left" duration={0.8} delay={150}>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
-                <div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                <div style={{
+                  background: 'var(--color-white)',
+                  borderRadius: 'var(--border-radius-lg)',
+                  padding: '32px',
+                  border: '1px solid #f0ede8',
+                }}>
                   <h3 style={{
                     color: 'var(--color-text-dark)',
                     fontWeight: 700,
-                    fontSize: '1.4rem',
-                    margin: '0 0 16px 0',
+                    fontSize: '1.2rem',
+                    margin: '0 0 20px 0',
                   }}>
-                    Varför välja Nordisk Bergmark AB?
+                    Varför välja Söderholms El & VVS?
                   </h3>
-                  <p style={{ color: 'var(--color-gray-600)', fontSize: '0.96rem', lineHeight: 1.7, margin: 0 }}>
-                    Vi kombinerar gedigen yrkeskompetens med moderna borriggar, säkra metoder och högsta precision.
-                  </p>
+
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                    {[
+                      {
+                        icon: ShieldCheck,
+                        title: 'Auktoriserade installatörer',
+                        desc: 'Full behörighet från Elsäkerhetsverket och certifierade VVS-tekniker enligt Säker Vatten.',
+                      },
+                      {
+                        icon: Award,
+                        title: 'Thermia Specialist sedan decennier',
+                        desc: 'Auktoriserad återförsäljare och servicepartner med marknadsledande garantier.',
+                      },
+                      {
+                        icon: Clock,
+                        title: 'Snabb offert & hembesök',
+                        desc: 'Vi återkopplar inom 24 timmar och genomför kostnadsfria platsbesök i hela Stockholmsregionen.',
+                      },
+                    ].map(({ icon: Icon, title, desc }, i) => (
+                      <div key={i} style={{ display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
+                        <div style={{
+                          width: '40px',
+                          height: '40px',
+                          minWidth: '40px',
+                          borderRadius: '10px',
+                          background: '#0F172A',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                        }}>
+                          <Icon size={20} color="#ffffff" />
+                        </div>
+                        <div>
+                          <p style={{ margin: '0 0 4px 0', fontWeight: 700, fontSize: '0.92rem', color: 'var(--color-text-dark)' }}>
+                            {title}
+                          </p>
+                          <p style={{ margin: 0, color: 'var(--color-gray-600)', fontSize: '0.86rem', lineHeight: 1.6 }}>
+                            {desc}
+                          </p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
 
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}>
-                  {[
-                    {
-                      icon: ShieldCheck,
-                      title: 'Certifierad säkerhet',
-                      desc: 'Full behörighet för bergsprängning med riskanalyser och säkra vibrationsmätningar.',
-                    },
-                    {
-                      icon: Clock,
-                      title: 'Snabba besked & tidsplan',
-                      desc: 'Kostnadsfri offert inom 24 timmar och punktlig leverans enligt överenskommelse.',
-                    },
-                    {
-                      icon: Award,
-                      title: 'Lokal expertis i Bohuslän',
-                      desc: 'Gedigen erfarenhet av bohuslänska mark- och bergförhållanden med utgångspunkt från Orust.',
-                    },
-                  ].map(({ icon: Icon, title, desc }, i) => (
-                    <div
-                      key={i}
-                      style={{
-                        background: 'var(--color-white)',
-                        borderRadius: '16px',
-                        padding: '22px 24px',
-                        border: '1px solid #e5e7eb',
-                        display: 'flex',
-                        gap: '16px',
-                        alignItems: 'flex-start',
-                      }}
-                    >
-                      <div style={{
-                        width: '44px',
-                        height: '44px',
-                        minWidth: '44px',
-                        borderRadius: '12px',
-                        background: '#0F172A',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        boxShadow: '0 4px 12px rgba(15, 23, 42, 0.12)',
-                      }}>
-                        <Icon size={22} color="#ffffff" />
-                      </div>
-                      <div>
-                        <h4 style={{ margin: '0 0 4px 0', fontWeight: 700, fontSize: '1rem', color: 'var(--color-text-dark)' }}>
-                          {title}
-                        </h4>
-                        <p style={{ margin: 0, color: 'var(--color-gray-600)', fontSize: '0.9rem', lineHeight: 1.55 }}>
-                          {desc}
-                        </p>
-                      </div>
-                    </div>
-                  ))}
+                <div style={{
+                  background: '#0F172A',
+                  color: 'var(--color-white)',
+                  borderRadius: 'var(--border-radius-lg)',
+                  padding: '28px',
+                  boxShadow: '0 8px 32px rgba(15, 23, 42, 0.15)',
+                }}>
+                  <p style={{
+                    fontWeight: 700,
+                    fontSize: '1.05rem',
+                    margin: '0 0 8px 0',
+                  }}>
+                    Föredrar du att ringa direkt?
+                  </p>
+                  <p style={{
+                    color: 'rgba(255,255,255,0.85)',
+                    fontSize: '0.9rem',
+                    margin: '0 0 16px 0',
+                    lineHeight: 1.6,
+                  }}>
+                    Slå oss en signal på 08-25 30 33 så bollar vi dina idéer och bokar in ett möte direkt över telefon.
+                  </p>
+                  <a
+                    href="tel:08253033"
+                    style={{
+                      display: 'inline-block',
+                      color: 'var(--color-white)',
+                      fontWeight: 700,
+                      fontSize: '1.1rem',
+                      textDecoration: 'none',
+                      borderBottom: '2px solid rgba(255,255,255,0.6)',
+                      paddingBottom: '2px',
+                    }}
+                  >
+                    08-25 30 33
+                  </a>
                 </div>
               </div>
             </ScrollReveal>
@@ -341,29 +369,53 @@ export default function Quote() {
         </div>
       </section>
 
-      {/* ── SECTION C: FAQ ────────────────────────────────────── */}
+      {/* ── SECTION C: FAQ ─────────────────────────────────────── */}
       <section style={{ background: '#ffffff', padding: '80px 0', borderTop: '1px solid #e2e8f0' }}>
         <div style={container}>
-          <FAQAccordion
-            items={faqItems}
-            title="Vanliga frågor om offerten"
-            subtitle="Här hittar du svar på de vanligaste frågorna inför ert mark- och bergarbete."
-          />
+          <div style={{ textAlign: 'center', maxWidth: '600px', margin: '0 auto 50px auto' }}>
+            <ScrollReveal animation="blur-in">
+              <span style={{
+                color: '#0f172a',
+                fontWeight: 700,
+                fontSize: '0.8rem',
+                letterSpacing: '0.08em',
+                textTransform: 'uppercase',
+                display: 'inline-block',
+                marginBottom: '10px',
+                background: '#e2e8f0',
+                padding: '4px 14px',
+                borderRadius: '999px',
+              }}>
+                Vanliga frågor
+              </span>
+              <h2 style={{
+                color: 'var(--color-text-dark)',
+                fontWeight: 700,
+                fontSize: 'clamp(1.8rem, 3.2vw, 2.4rem)',
+                margin: 0,
+                lineHeight: 1.2,
+              }}>
+                Frågor om offerter
+              </h2>
+            </ScrollReveal>
+          </div>
+          <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+            <FAQAccordion items={faqItems} />
+          </div>
         </div>
       </section>
 
-      {/* ── SECTION D: CTA BANNER ──────────────────────────────── */}
+      {/* ── SECTION D: CTA ─────────────────────────────────────── */}
       <CTABanner />
 
       <style>{`
-        @media (max-width: 900px) {
+        @media (max-width: 860px) {
           .quote-grid {
             grid-template-columns: 1fr !important;
             gap: 40px !important;
           }
           .quote-form-row {
             grid-template-columns: 1fr !important;
-            gap: 0 !important;
           }
         }
       `}</style>

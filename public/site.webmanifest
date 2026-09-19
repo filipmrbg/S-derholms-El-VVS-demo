@@ -1,11 +1,11 @@
 {
-  "name": "Nordisk Bergmark AB",
-  "short_name": "Nordisk Bergmark",
-  "description": "Professionell bergsprängning, stenspräckning och markarbeten på Orust och i hela Bohuslän.",
+  "name": "Söderholms El & VVS",
+  "short_name": "Söderholms",
+  "description": "Auktoriserad elinstallation, professionell VVS och Thermia värmepumpar i Stockholm sedan 1942.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0f172a",
-  "theme_color": "#eab308",
+  "background_color": "#0B1329",
+  "theme_color": "#C59B27",
   "icons": [
     {
       "src": "/favicon.png",

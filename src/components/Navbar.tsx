@@ -346,7 +346,7 @@ export default function Navbar() {
             }}
           >
             <a
-              href="tel:0722107582"
+              href="tel:08253033"
               style={{
                 display: 'flex',
                 alignItems: 'center',
@@ -363,7 +363,7 @@ export default function Navbar() {
               onMouseLeave={e => (e.currentTarget.style.opacity = '1')}
             >
               <Phone size={14} color="#ffffff" />
-              <span>072-210 75 82</span>
+              <span>08-25 30 33</span>
             </a>
           </div>
 
@@ -564,8 +564,8 @@ export default function Navbar() {
             Ring oss direkt:
           </span>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', alignItems: 'center' }}>
-            <a href="tel:0722107582" style={{ color: 'var(--color-white)', fontWeight: 600, fontSize: '0.95rem', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
-              <Phone size={14} color="#ffffff" /> 072-210 75 82
+            <a href="tel:08253033" style={{ color: 'var(--color-white)', fontWeight: 600, fontSize: '0.95rem', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+              <Phone size={14} color="#ffffff" /> 08-25 30 33
             </a>
           </div>
         </div>
@@ -590,7 +590,7 @@ export default function Navbar() {
           padding: 0;
           border-radius: 0;
           box-shadow: none;
-          filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.45));
+          filter: brightness(1.12) saturate(1.2) drop-shadow(0 2px 10px rgba(0, 0, 0, 0.7));
           transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
         }
         .nav-logo.scrolled {
