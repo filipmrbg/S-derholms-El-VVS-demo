@@ -174,11 +174,21 @@ export default function Contact() {
                   </div>
                   <div>
                     <p style={{ margin: '0 0 4px 0', fontWeight: 700, fontSize: '0.9rem', color: 'var(--color-text-dark)' }}>
-                      Verksamhetsområde
+                      Besöksadress & Verksamhetsområde
                     </p>
-                    <p style={{ margin: 0, color: 'var(--color-gray-600)', fontSize: '0.95rem', lineHeight: 1.5 }}>
-                      Stockholm • Bromma • Danderyd • Täby • Nacka med omnejd
-                    </p>
+                    <a
+                      href="https://www.google.com/maps/place/Tranebergsv%C3%A4gen+78,+167+44+Bromma/@59.3359768,17.9745848,17z/data=!3m1!4b1!4m6!3m5!1s0x465f761f05a6b875:0xac9469470dca853e!8m2!3d59.3359768!4d17.9771597!16s%2Fg%2F11csjq7z6j"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ color: 'var(--color-gray-600)', fontSize: '0.95rem', textDecoration: 'none', lineHeight: 1.5, display: 'block', transition: 'color 0.2s ease' }}
+                      onMouseEnter={e => (e.currentTarget.style.color = '#0F172A')}
+                      onMouseLeave={e => (e.currentTarget.style.color = 'var(--color-gray-600)')}
+                    >
+                      Tranebergsvägen 78, 167 44 Bromma
+                    </a>
+                    <span style={{ fontSize: '0.85rem', color: '#64748b' }}>
+                      Uppdrag i hela Storstockholm (Bromma, Täby, Nacka, Danderyd)
+                    </span>
                   </div>
                 </div>
 
@@ -385,27 +395,89 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* ── SECTION C: FAQ ─────────────────────────────────────── */}
-      <section style={{ background: '#ffffff', padding: '80px 0', borderTop: '1px solid #e2e8f0' }}>
+      {/* ── SECTION C: GOOGLE MAPS / HITTA TILL OSS ──────────── */}
+      <section style={{
+        background: '#ffffff',
+        padding: 'clamp(64px, 8vw, 96px) 0',
+        borderTop: '1px solid #e2e8f0',
+      }}>
+        <div style={container}>
+          <div style={{ textAlign: 'center', maxWidth: '640px', margin: '0 auto clamp(32px, 5vw, 44px) auto' }}>
+            <ScrollReveal animation="blur-in">
+              <span style={{
+                color: 'var(--color-primary-orange)',
+                fontWeight: 700,
+                fontSize: '0.85rem',
+                letterSpacing: '0.08em',
+                textTransform: 'uppercase',
+                display: 'inline-block',
+                marginBottom: '8px',
+              }}>
+                Hitta till oss
+              </span>
+              <h2 style={{
+                color: 'var(--color-text-dark)',
+                fontFamily: 'var(--font-heading)',
+                fontSize: 'clamp(1.8rem, 3.2vw, 2.4rem)',
+                fontWeight: 700,
+                margin: '0 0 10px 0',
+                lineHeight: 1.2,
+              }}>
+                Vårt kontor i Bromma
+              </h2>
+              <p style={{ color: 'var(--color-gray-600)', fontSize: '1rem', lineHeight: 1.65, margin: 0 }}>
+                Tranebergsvägen 78, 167 44 Bromma. Härifrån utgår våra behöriga elektriker och certifierade värmepumpstekniker till kunder i hela Storstockholm.
+              </p>
+            </ScrollReveal>
+          </div>
+
+          <ScrollReveal animation="fade-up" delay={120}>
+            <div style={{
+              position: 'relative',
+              borderRadius: '24px',
+              overflow: 'hidden',
+              boxShadow: '0 16px 45px rgba(15, 23, 42, 0.08)',
+              border: '1px solid #e2e8f0',
+              background: '#f8fafc',
+            }}>
+              <iframe
+                title="Söderholms El & VVS - Tranebergsvägen 78, Bromma"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2034.8028751528652!2d17.9745848!3d59.3359768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f761f05a6b875%3A0xac9469470dca853e!2sTranebergsv%C3%A4gen%2078%2C%20167%2044%20Bromma!5e0!3m2!1ssv!2sse!4v1726757000000!5m2!1ssv!2sse"
+                width="100%"
+                height="450"
+                style={{
+                  border: 0,
+                  display: 'block',
+                  width: '100%',
+                  minHeight: '450px',
+                }}
+                allowFullScreen={false}
+                loading="lazy"
+                />
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* ── SECTION D: FAQ ─────────────────────────────────────── */}
+      <section style={{ background: '#f8fafc', padding: '80px 0', borderTop: '1px solid #e2e8f0' }}>
         <div style={container}>
           <div style={{ textAlign: 'center', maxWidth: '640px', margin: '0 auto 50px auto' }}>
             <ScrollReveal animation="blur-in">
               <span style={{
-                color: '#0f172a',
+                color: 'var(--color-primary-orange)',
                 fontWeight: 700,
-                fontSize: '0.8rem',
+                fontSize: '0.85rem',
                 letterSpacing: '0.08em',
                 textTransform: 'uppercase',
                 display: 'inline-block',
-                marginBottom: '10px',
-                background: '#e2e8f0',
-                padding: '4px 14px',
-                borderRadius: '999px',
+                marginBottom: '8px',
               }}>
                 Vanliga frågor
               </span>
               <h2 style={{
                 color: 'var(--color-text-dark)',
+                fontFamily: 'var(--font-heading)',
                 fontWeight: 700,
                 fontSize: 'clamp(1.8rem, 3.2vw, 2.4rem)',
                 margin: 0,

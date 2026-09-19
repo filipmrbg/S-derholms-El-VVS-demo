@@ -143,14 +143,17 @@ export default function Footer() {
                 <span>08-25 30 33</span>
               </a>
 
-              <div
-                className="footer-contact-static"
+              <a
+                href="https://www.google.com/maps/place/Tranebergsv%C3%A4gen+78,+167+44+Bromma/@59.3359768,17.9745848,17z/data=!3m1!4b1!4m6!3m5!1s0x465f761f05a6b875:0xac9469470dca853e!8m2!3d59.3359768!4d17.9771597!16s%2Fg%2F11csjq7z6j"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-contact-item"
               >
                 <div className="footer-contact-icon">
                   <MapPin size={16} strokeWidth={2} />
                 </div>
-                <span>Stockholm med omnejd</span>
-              </div>
+                <span>Tranebergsvägen 78, Bromma</span>
+              </a>
             </div>
           </div>
         </div>
