@@ -174,7 +174,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p style={{ margin: '0 0 4px 0', fontWeight: 700, fontSize: '0.9rem', color: 'var(--color-text-dark)' }}>
-                      Besöksadress & Verksamhetsområde
+                      Utgångspunkt & Verksamhetsområde
                     </p>
                     <a
                       href="https://www.google.com/maps/place/Tranebergsv%C3%A4gen+78,+167+44+Bromma/@59.3359768,17.9745848,17z/data=!3m1!4b1!4m6!3m5!1s0x465f761f05a6b875:0xac9469470dca853e!8m2!3d59.3359768!4d17.9771597!16s%2Fg%2F11csjq7z6j"
@@ -413,7 +413,7 @@ export default function Contact() {
                 display: 'inline-block',
                 marginBottom: '8px',
               }}>
-                Hitta till oss
+                Verksamhetsområde
               </span>
               <h2 style={{
                 color: 'var(--color-text-dark)',
@@ -423,10 +423,10 @@ export default function Contact() {
                 margin: '0 0 10px 0',
                 lineHeight: 1.2,
               }}>
-                Vårt kontor i Bromma
+                Baserade i Bromma – verksamma i hela Stockholm
               </h2>
               <p style={{ color: 'var(--color-gray-600)', fontSize: '1rem', lineHeight: 1.65, margin: 0 }}>
-                Tranebergsvägen 78, 167 44 Bromma. Härifrån utgår våra behöriga elektriker och certifierade värmepumpstekniker till kunder i hela Storstockholm.
+                Med bas på Tranebergsvägen 78 rullar våra servicebilar dagligen ut till uppdrag inom elinstallationer, VVS och värmepumpar över hela Storstockholm.
               </p>
             </ScrollReveal>
           </div>
